@@ -1,0 +1,54 @@
+.organio{
+
+    &__subject{
+        color: #FFF;
+text-align: center;
+text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+font-family: "DM Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 1; 
+letter-spacing: -1.12px;
+text-transform: uppercase;
+    }
+&__lead{
+    color: #FFF;
+
+text-align: center;
+text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.2;
+letter-spacing: -0.56px;
+}
+&__item:nth-child(1){
+    border-radius: 20px;
+background-color: #F8766B;
+width: 335px;
+height: 465px;
+flex-shrink: 0;
+}
+&__text{
+    color: #FFF;
+font-family: "DM Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: -0.96px;
+
+}
+&__plant{
+    color: #FFF;
+
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.28;
+letter-spacing: -0.28px;
+}
+}
