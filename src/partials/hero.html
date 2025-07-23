@@ -3,35 +3,101 @@
     <h2 class="hero__title">
       fresh harvest box is your 0ne-stop place for a delicious fruit basket
     </h2>
-    <img src="" alt="" class="hero__picture" />
-    <img src="" alt="" class="hero__picture" />
-    <img src="" alt="" class="hero__picture" />
-    <div class="hero__box"></div>
-    <p class="hero__text">
-      Our expertly curated fruit baskets are made with the freshest, highest
-      quality fruits available. Whether you are looking for a healthy snack or a
-      gift for a loved one, Fresh Harvest Box has got you covered.
-    </p>
+    <picture>
+      <source
+        srcset="
+          src/img/desktop/woman-desktop@1x.webp 1x,
+          src/img/desktop/woman-desktop@2x.webp 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="../img/tablet/woman-tablet@1x.webp 1x,../img/tablet/woman-tablet@2x.webp 2x"
+        media="(min-width:720px)"
+      />
+      <source
+        srcset="../img/mobile/woman-mobile@1x.webp 1x,../img/mobile/woman-mobile@2x.webp 2x"
+        media="(min-width:480px)"
+      />
+      <img src="../img/mobile/woman-mobile@1x.webp" alt="" class="hero__picture">
+    </picture>
+    <button type="button" class="hero__button">shopnow</button>
     <div class="hero__wrap">
-      <h3 class="hero__subtitles">Fruit</h3>
-      <img src="" alt="" class="hero__pictures" />
       <p class="hero__text">
-        Refreshing and juicy, watermelon is the perfect summer treat and a great
-        source of hydration
+        Our expertly curated fruit baskets are made with the freshest, highest
+        quality fruits available. Whether you are looking for a healthy snack or
+        a gift for a loved one, Fresh Harvest Box has got you covered.
       </p>
-    </div>
-    <button type="button" class="hero__btn">#organic</button>
-    <button type="button" class="hero__btn">#products</button>
-    <button type="button" class="hero__btn">#basket</button>
-    <button type="button" class="hero__btn">#fruits</button>
-    <div class="hero__wrap">
-      <h3 class="hero__subtitles">Fruit</h3>
-      <img src="" alt="" class="hero__pictures" />
-      <p class="hero__text">
-       Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making them a delicious and healthy snack
-      </p>
+      <div class="hero__box">
+        <h3 class="hero__subtitles">Fruit</h3>
+        <picture>
+          <source
+            srcset="
+              ../img/desktop/watermelon-desktop@1x.webp 1x,
+              ../img/desktop/watermelon-desktop@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+          />
+          
+          <source
+            srcset="
+              ../img/tablet/watermelon-tablet@1x.webp 1x,
+              ../img/tablet/watermelon-tablet@2x.webp 2x
+            "
+            media="(min-width:720px)"
+          />
+          <source
+            srcset="
+              ../img/mobile/watermelon-mobile@1x.webp 1x,
+              ../img/mobile/watermelon-mobile@2x.webp 2x
+            "
+            media="(min-width:480px)"
+          />
+          <img src="../img/mobile/watermelon-mobile@1x.webp" alt="" class="hero__picture">
+        </picture>
+        <p class="hero__text">
+          Refreshing and juicy, watermelon is the perfect summer treat and a
+          great source of hydration
+        </p>
+      </div>
     </div>
 
+    <div class="hero__wrapper">
+      <button type="button" class="hero__btn">#organic</button>
+      <button type="button" class="hero__btn">#products</button>
+      <button type="button" class="hero__btn">#basket</button>
+      <button type="button" class="hero__btn">#fruits</button>
 
+      <div class="boxes">
+        <h3 class="hero__subtitles">Fruit</h3>
+        <picture>
+          <source
+            srcset="
+              ../img/desktop/basket-desktop@1x.webp 1x,
+              ../img/desktop/basket-desktop@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ../img/tablet/basket-tablet@1x.webp 1x,
+              ../img/tablet/basket-tablet@2x.webp 2x
+            "
+            media="(min-width:720px)"
+          />
+          <source
+            srcset="
+              ../img/mobile/basket-mobile@1x.webp 1x,
+              ../img/mobile/basket-mobile@2x.webp 2x
+            "
+            media="(min-width:480px)"
+          />
+        </picture>
+        <p class="hero__text">
+          Sweet and juicy, strawberries are packed with vitamin C and
+          antioxidants, making them a delicious and healthy snack
+        </p>
+      </div>
+    </div>
   </div>
 </section>
