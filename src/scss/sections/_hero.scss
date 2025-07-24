@@ -1,0 +1,166 @@
+.hero {
+  background-color: $background-color;
+  padding-top: 56px;
+  padding-bottom: 80px;
+  @media screen and (min-width: 736px) {
+    padding-top: 64px;
+    padding-bottom: 137px;
+  }
+  @media screen and (min-width: 1248px) {
+    padding-bottom: 150px;
+  }
+
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    color: $text-color;
+    text-align: center;
+    text-shadow: 0px 4px 70px $title-color;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.12px;
+    text-transform: uppercase;
+    width: 335px;
+    @media screen and (min-width: 736px) {
+      font-size: 50px;
+      letter-spacing: -2px;
+      width: 704px;
+    }
+    @media screen and (min-width: 1248px) {
+      font-size: 64px;
+      letter-spacing: -2.56px;
+      width: 898px;
+    }
+  }
+  &__picture {
+    border-radius: 500px;
+    border: 1px solid $title-color;
+    width: 335px;
+    height: 509px;
+    flex-shrink: 0;
+    @media screen and (min-width: 736px) {
+      width: 400px;
+      height: 602px;
+    }
+  }
+  &__button {
+    background: $text-color;
+    border-radius: 50%;
+    border: none;
+    width: 114px;
+    height: 114px;
+    color: $background-color;
+    text-align: center;
+    text-shadow: 0px 4px 70px $title-color;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 736px) {
+      font-size: 28px;
+      letter-spacing: -1.12px;
+    }
+  }
+  &__text {
+    color: $text-color;
+    text-shadow: 0px 4px 70px $title-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1, 28;
+    letter-spacing: -0.56px;
+    width: 279px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    @media screen and (min-width: 736px) {
+      margin-top: 79px;
+    }
+    @media screen and (min-width: 1248px) {
+      width: 222px;
+      margin-top: 37px;
+    }
+  }
+
+  &__box {
+    border-radius: 500px;
+    background: $wrap-color;
+    width: 249px;
+    height: 387px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__subtitles {
+    color: $text-color;
+    text-align: center;
+    text-shadow: 0px 4px 70px $title-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1, 16;
+    letter-spacing: -0.48px;
+  }
+  &__picturees {
+    width: 200px;
+    height: 172px;
+    flex-shrink: 0;
+  }
+  &__pictures {
+    width: 162px;
+    height: 185px;
+    flex-shrink: 0;
+  }
+  &__titles {
+    color: $text-color;
+    text-align: center;
+    text-shadow: 0px 4px 70px $title-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    width: 155px;
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+  &__btn {
+    padding: 12px 32px;
+    border-radius: 1000px;
+    border: 1px solid $text-color;
+    background: $background-color;
+    color: $text-color;
+    text-align: center;
+    text-shadow: 0px 4px 70px $title-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $text-color;
+      color: $background-color;
+    }
+  }
+  &__color {
+    background: $button-color;
+  }
+}
