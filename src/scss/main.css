@@ -59,6 +59,7 @@ body {
   background-color: rgb(174, 19, 50);
   padding-top: 56px;
   padding-bottom: 80px;
+  background-color: red;
 }
 @media screen and (min-width: 736px) {
   .hero {
