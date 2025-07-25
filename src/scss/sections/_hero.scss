@@ -1,5 +1,4 @@
 .hero {
-    
   background-color: $background-color;
   padding-top: 56px;
   padding-bottom: 80px;
@@ -13,9 +12,19 @@
 
   & > .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    
+    flex-direction: column;
+    //   @media screen and (min-width: 355px){
+    //   flex-direction: column;
+
+    // }
+    //    @media screen and (min-width: 736px){
+
+    //  flex-wrap: nowrap;
+    // }
+    // @media screen and (min-width: 1248px){
+
+    // }
   }
   &__title {
     color: $text-color;
@@ -33,33 +42,33 @@
     @media screen and (min-width: 736px) {
       font-size: 50px;
       letter-spacing: -2px;
-      width: 704px;
+      width: 640px;
     }
     @media screen and (min-width: 1248px) {
       font-size: 64px;
       letter-spacing: -2.56px;
-      width: 898px;
+      width: 800px;
     }
   }
   &__picture {
     border-radius: 500px;
     border: none;
-    width: 335px;
-    height: 509px;
     flex-shrink: 0;
     position: relative;
     top: -83px;
     @media screen and (min-width: 736px) {
-      width: 400px;
-      height: 602px;
+      top: -220px;
+    }
+    @media screen and (min-width: 1248px) {
+      top: -273px;
     }
   }
   &__button {
     background: $text-color;
     border-radius: 50%;
     border: none;
-    width: 114px;
-    height: 114px;
+    width: 80px;
+    height: 80px;
     color: $background-color;
     text-align: center;
     text-shadow: 0px 4px 70px $title-color;
@@ -67,11 +76,22 @@
     font-weight: 500;
     line-height: 1;
     letter-spacing: -0.8px;
+    pad: 14px, 8px, 14px, 8px;
     text-transform: uppercase;
+    transform: rotate(-14deg);
+    position: relative;
+    top: -130px;
 
     @media screen and (min-width: 736px) {
       font-size: 28px;
       letter-spacing: -1.12px;
+      width: 114px;
+      height: 114px;
+      flex-shrink: 0;
+      top: -290px;
+    }
+    @media screen and (min-width: 1248px) {
+      top: -340px;
     }
   }
   &__text {
@@ -103,6 +123,11 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+
+  }
+  &__color {
+    background: $button-color;
   }
   &__subtitles {
     color: $text-color;
@@ -138,7 +163,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
   }
   &__list {
     display: flex;
@@ -147,6 +172,10 @@
     justify-content: center;
     margin-top: 44px;
     margin-bottom: 44px;
+    width: 266px;
+    @media screen and (min-width: 736px) {
+      justify-content: end;
+    }
   }
   &__btn {
     padding: 12px 32px;
@@ -167,19 +196,52 @@
       color: $background-color;
     }
   }
-  &__color {
-    background: $button-color;
+  @media screen and (min-width: 736px) {
+    &__elem {
+      display: flex;
+               
+    }
+    
   }
-  &__position{
+    
+  @media screen and (min-width: 1248px){
+    
+    &__elem {
+      display: flex;
+      justify-content: space-around;
+               
+    }
+  }
+  &__position {
     position: relative;
     z-index: 1;
-    top:0px;
+    top: 0px;
     left: 130px;
+
+    @media screen and (min-width: 736px) {
+      top: -20px;
+      left: 270px;
+    }
+    @media screen and (min-width: 1248px) {
+      top: -40px;
+      left: 325px;
+    }
   }
-  &__positions{
+  &__positions {
     position: relative;
     z-index: 1;
-    bottom: 0px;
-    right: 130px;
+    transform: rotate(-5deg);
+    @media screen and (min-width: 355px) {
+      bottom: 23px;
+      right: 130px;
+    }
+    @media screen and (min-width: 736px) {
+      bottom: 60px;
+      right: 265px;
+    }
+    @media screen and (min-width: 1248px) {
+      bottom: 28px;
+      right: 280px;
+    }
   }
 }
