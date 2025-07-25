@@ -73,8 +73,8 @@ body {
 }
 .hero > .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .hero__title {
   color: rgb(255, 255, 255);
@@ -93,37 +93,39 @@ body {
   .hero__title {
     font-size: 50px;
     letter-spacing: -2px;
-    width: 704px;
+    width: 640px;
   }
 }
 @media screen and (min-width: 1248px) {
   .hero__title {
     font-size: 64px;
     letter-spacing: -2.56px;
-    width: 898px;
+    width: 800px;
   }
 }
 .hero__picture {
   border-radius: 500px;
   border: none;
-  width: 335px;
-  height: 509px;
   flex-shrink: 0;
   position: relative;
   top: -83px;
 }
 @media screen and (min-width: 736px) {
   .hero__picture {
-    width: 400px;
-    height: 602px;
+    top: -220px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .hero__picture {
+    top: -273px;
   }
 }
 .hero__button {
   background: rgb(255, 255, 255);
   border-radius: 50%;
   border: none;
-  width: 114px;
-  height: 114px;
+  width: 80px;
+  height: 80px;
   color: rgb(174, 19, 50);
   text-align: center;
   text-shadow: 0px 4px 70px rgb(0, 0, 0);
@@ -131,12 +133,25 @@ body {
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.8px;
+  pad: 14px, 8px, 14px, 8px;
   text-transform: uppercase;
+  transform: rotate(-14deg);
+  position: relative;
+  top: -130px;
 }
 @media screen and (min-width: 736px) {
   .hero__button {
     font-size: 28px;
     letter-spacing: -1.12px;
+    width: 114px;
+    height: 114px;
+    flex-shrink: 0;
+    top: -290px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .hero__button {
+    top: -340px;
   }
 }
 .hero__text {
@@ -172,6 +187,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.hero__color {
+  background: rgb(245, 206, 19);
+}
 .hero__subtitles {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -206,7 +224,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .hero__list {
   display: flex;
@@ -215,6 +232,12 @@ body {
   justify-content: center;
   margin-top: 44px;
   margin-bottom: 44px;
+  width: 266px;
+}
+@media screen and (min-width: 736px) {
+  .hero__list {
+    justify-content: end;
+  }
 }
 .hero__btn {
   padding: 12px 32px;
@@ -234,8 +257,16 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(174, 19, 50);
 }
-.hero__color {
-  background: rgb(245, 206, 19);
+@media screen and (min-width: 736px) {
+  .hero__elem {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .hero__elem {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .hero__position {
   position: relative;
@@ -243,11 +274,40 @@ body {
   top: 0px;
   left: 130px;
 }
+@media screen and (min-width: 736px) {
+  .hero__position {
+    top: -20px;
+    left: 270px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .hero__position {
+    top: -40px;
+    left: 325px;
+  }
+}
 .hero__positions {
   position: relative;
   z-index: 1;
-  bottom: 0px;
-  right: 130px;
+  transform: rotate(-5deg);
+}
+@media screen and (min-width: 355px) {
+  .hero__positions {
+    bottom: 23px;
+    right: 130px;
+  }
+}
+@media screen and (min-width: 736px) {
+  .hero__positions {
+    bottom: 60px;
+    right: 265px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .hero__positions {
+    bottom: 28px;
+    right: 280px;
+  }
 }
 
 .organio__subject {
