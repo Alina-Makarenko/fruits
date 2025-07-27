@@ -91,28 +91,28 @@ border-radius: 20px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-
+background-color: $lime;
 }
  &__item:nth-child(6){
     width: 389px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-
+background-color:$apple;
 }
  &__item:nth-child(7){
     width: 389px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-
+background-color: $peach;
 }
  &__item:nth-child(8){
     width: 389px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-background-color: #AE1332;
+background-color: $plums;
 
 }
  &__item:nth-child(9){
@@ -120,7 +120,7 @@ background-color: #AE1332;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-
+background-color: $orange;
 }
 &__btn{
 display: flex;
