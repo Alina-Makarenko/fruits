@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none;
   font-style: normal;
@@ -53,6 +54,122 @@ address {
 
 body {
   font-family: "DM Sans", sans-serif;
+}
+
+.header {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 736px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+.header__list {
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .header__list {
+    display: flex;
+    margin-right: 94px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .header__list {
+    display: flex;
+    margin-right: 322px;
+  }
+}
+@media screen and (min-width: 736px) {
+  .header__item {
+    margin-right: 16px;
+  }
+  .header__item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .header__item {
+    margin-right: 20px;
+  }
+  .header__item:last-child {
+    margin-right: 0;
+  }
+}
+.header__link {
+  color: rgb(174, 19, 50);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.56px;
+}
+.header__navigation {
+  display: flex; /* Делаем контейнер flex-контейнером */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  justify-content: space-between; /* Распределяем элементы по краям */
+}
+.header__icon {
+  width: 16px;
+  height: 16px;
+  fill: rgb(174, 19, 50);
+}
+.header__description {
+  color: rgb(174, 19, 50);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}
+.header__basket {
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .header__basket {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    fill: #AE1332;
+  }
+}
+.header__baskets {
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .header__baskets {
+    display: flex;
+    margin-left: 50;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .header__baskets {
+    display: flex;
+    margin-left: 100;
+  }
+}
+.header__menu {
+  display: block;
+}
+@media screen and (min-width: 736px) {
+  .header__menu {
+    display: none;
+  }
+}
+.header__burger {
+  width: 24px;
+  height: 24px;
+  fill: #AE1332;
 }
 
 .hero {
