@@ -475,7 +475,7 @@ body {
 }
 .organio__item:nth-child(1) {
   border-radius: 20px;
-  background-color: #F8766B;
+  background-color: rgb(248, 118, 107);
   width: 335px;
   height: 465px;
   flex-shrink: 0;
@@ -502,7 +502,7 @@ body {
 }
 .organio__item:nth-child(2) {
   border-radius: 20px;
-  background: #EDD251;
+  background: rgb(237, 210, 81);
   width: 335px;
   height: 465px;
   flex-shrink: 0;
@@ -512,48 +512,49 @@ body {
   height: 465px;
   flex-shrink: 0;
   border-radius: 20px;
-  background: #9DC262;
+  background: rgb(157, 194, 98);
 }
 .organio__item:nth-child(4) {
-  width: 389px;
-  height: 465px;
-  flex-shrink: 0;
-  border-radius: 20px;
-}
-.organio__item:nth-child(5) {
-  width: 389px;
+  width: 335px;
   height: 465px;
   flex-shrink: 0;
   border-radius: 20px;
   background-color: rgb(191, 214, 99);
 }
-.organio__item:nth-child(6) {
-  width: 389px;
+.organio__item:nth-child(5) {
+  width: 335px;
   height: 465px;
   flex-shrink: 0;
   border-radius: 20px;
   background-color: rgb(233, 63, 41);
 }
-.organio__item:nth-child(7) {
-  width: 389px;
+.organio__item:nth-child(6) {
+  width: 335px;
   height: 465px;
   flex-shrink: 0;
   border-radius: 20px;
   background-color: rgb(219, 79, 75);
 }
-.organio__item:nth-child(8) {
-  width: 389px;
+.organio__item:nth-child(7) {
+  width: 335px;
   height: 465px;
   flex-shrink: 0;
   border-radius: 20px;
   background-color: rgb(155, 83, 102);
 }
-.organio__item:nth-child(9) {
-  width: 389px;
+.organio__item:nth-child(8) {
+  width: 335px;
   height: 465px;
   flex-shrink: 0;
   border-radius: 20px;
   background-color: rgb(244, 127, 76);
+}
+.organio__item:nth-child(9) {
+  width: 335px;
+  height: 465px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background-color: rgb(152, 179, 126);
 }
 .organio__btn {
   display: flex;
