@@ -163,10 +163,10 @@
 // padding-right: 20px;
 //   outline: solid 2px blue;
 //     }
-padding-top: 17px;
-padding-bottom: 17px;
-padding-left: 20px;
-padding-right: 20px;
+// padding-top: 17px;
+// padding-bottom: 17px;
+// padding-left: 20px;
+// padding-right: 20px;
 
 
   @media screen and (min-width: 736px){
@@ -181,12 +181,12 @@ padding-right: 32px;
     display: none;
   @media screen and (min-width: 736px){
 display: flex;
-margin-right: 94px;
+// margin-right: 94px;
   }
 
     @media screen and (min-width: 1248px){
 display: flex;
-margin-right: 322px;
+// margin-right: 322px;
   }
 }
 &__item{
@@ -208,7 +208,9 @@ margin-right: 322px;
   }
 }
 
-
+&__nav{
+  display: flex;
+}
 &__link{
     color: $background-color;
 text-align: center;
@@ -220,10 +222,23 @@ line-height: 18px; /* 128.571% */
 letter-spacing: -0.56px;
 }
 
+
 &__navigation{
   display: flex; /* Делаем контейнер flex-контейнером */
   align-items: center; /* Выравниваем элементы по вертикали */
-  justify-content: space-between; /* Распределяем элементы по краям */
+  // justify-content: space-between; /* Распределяем элементы по краям */
+}
+
+&__logo{
+display: flex;
+  @media screen and (min-width: 736px){
+margin-left: 94px;
+// margin-right: 230px;
+  }
+  @media screen and (min-width: 1248px){
+margin-left: 346px;
+// margin-right: 506px;
+  }
 }
 
 
@@ -246,6 +261,9 @@ text-transform: uppercase;
 
 }
 
+&__description{
+  margin-left: 8px;
+}
 
 &__basket{
     display: none;
@@ -265,11 +283,11 @@ height: 24px;
         display: none;
   @media screen and (min-width: 736px){
     display:flex;
-margin-left: 50;
+    margin-left: 230px;
   }
   @media screen and (min-width: 1248px){
     display:flex;
-margin-left: 100;
+
   }
 }
 

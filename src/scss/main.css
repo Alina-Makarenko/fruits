@@ -56,12 +56,6 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-.header {
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 @media screen and (min-width: 736px) {
   .header {
     padding-top: 16px;
@@ -76,13 +70,11 @@ body {
 @media screen and (min-width: 736px) {
   .header__list {
     display: flex;
-    margin-right: 94px;
   }
 }
 @media screen and (min-width: 1248px) {
   .header__list {
     display: flex;
-    margin-right: 322px;
   }
 }
 @media screen and (min-width: 736px) {
@@ -101,6 +93,9 @@ body {
     margin-right: 0;
   }
 }
+.header__nav {
+  display: flex;
+}
 .header__link {
   color: rgb(174, 19, 50);
   text-align: center;
@@ -114,7 +109,19 @@ body {
 .header__navigation {
   display: flex; /* Делаем контейнер flex-контейнером */
   align-items: center; /* Выравниваем элементы по вертикали */
-  justify-content: space-between; /* Распределяем элементы по краям */
+}
+.header__logo {
+  display: flex;
+}
+@media screen and (min-width: 736px) {
+  .header__logo {
+    margin-left: 94px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .header__logo {
+    margin-left: 346px;
+  }
 }
 .header__icon {
   width: 16px;
@@ -131,6 +138,9 @@ body {
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.56px;
   text-transform: uppercase;
+}
+.header__description {
+  margin-left: 8px;
 }
 .header__basket {
   display: none;
@@ -149,13 +159,12 @@ body {
 @media screen and (min-width: 736px) {
   .header__baskets {
     display: flex;
-    margin-left: 50;
+    margin-left: 230px;
   }
 }
 @media screen and (min-width: 1248px) {
   .header__baskets {
     display: flex;
-    margin-left: 100;
   }
 }
 .header__menu {
