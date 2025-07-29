@@ -2,7 +2,6 @@
   background-color: $background-color;
   padding-top: 56px;
   padding-bottom: 80px;
-  background-color: red;
   @media screen and (min-width: 736px) {
     padding-top: 64px;
     padding-bottom: 137px;
@@ -164,7 +163,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+  //   @media screen and (min-width: 736px){
+    
+  // }
+  @media screen and (min-width: 1248px){
+    display: block;
+     position: relative;
+     margin-inline: 10px;
+     top: -800px;
+     right: 60px;
+  }
+  
   }
   &__list {
     display: flex;
@@ -205,6 +214,13 @@
     
   }
     
+  @media screen and (min-width: 1248px){
+    &__elem {
+      display: flex;
+           flex-direction: row;    
+    }
+    
+  }
   @media screen and (min-width: 1248px){
     
     &__elem {

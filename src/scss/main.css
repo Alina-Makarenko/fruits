@@ -59,7 +59,6 @@ body {
   background-color: rgb(174, 19, 50);
   padding-top: 56px;
   padding-bottom: 80px;
-  background-color: red;
 }
 @media screen and (min-width: 736px) {
   .hero {
@@ -226,6 +225,15 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1248px) {
+  .hero__wrapper {
+    display: block;
+    position: relative;
+    margin-inline: 10px;
+    top: -800px;
+    right: 20px;
+  }
+}
 .hero__list {
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +269,12 @@ body {
 @media screen and (min-width: 736px) {
   .hero__elem {
     display: flex;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .hero__elem {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1248px) {
