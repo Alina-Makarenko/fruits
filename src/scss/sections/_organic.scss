@@ -38,7 +38,7 @@ letter-spacing: -0.56px;
 }
 &__item:nth-child(1){
     border-radius: 20px;
-background-color: #F8766B;
+background-color: $strawberry;
 width: 335px;
 height: 465px;
 flex-shrink: 0;
@@ -66,7 +66,7 @@ letter-spacing: -0.28px;
 }
 &__item:nth-child(2){
     border-radius: 20px;
-background: #EDD251;
+background: $banana;
 width: 335px;
 height: 465px;
 flex-shrink: 0;
@@ -77,50 +77,50 @@ flex-shrink: 0;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-background: #9DC262;
+background: $btn-color;
 }
  &__item:nth-child(4){
-    width: 389px;
+   width: 335px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-
+background-color:$lime;
 }
  &__item:nth-child(5){
-    width: 389px;
+    width: 335px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-
+background-color: $apple;
 }
  &__item:nth-child(6){
-    width: 389px;
+    width: 335px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-
+background-color:$peach;
 }
  &__item:nth-child(7){
-    width: 389px;
+    width: 335px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-
+background-color: $plums;
 }
  &__item:nth-child(8){
-    width: 389px;
+    width: 335px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-background-color: #AE1332;
+background-color: $orange;
 
 }
  &__item:nth-child(9){
-    width: 389px;
+    width: 335px;
 height: 465px;
 flex-shrink: 0;
 border-radius: 20px;
-
+background-color: $kiwi;
 }
 &__btn{
 display: flex;

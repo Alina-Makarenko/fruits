@@ -1,61 +1,56 @@
+
 // .header{
 
 
 
-
-// padding-top: 17px;
-// padding-bottom: 17px;
-// padding-left: 20px;
-// padding-right: 20px;
-
-//   @media screen and (min-width: 768px){
+//   @media screen and (min-width: 736px){
 // padding-top: 16px;
 // padding-bottom: 16px;
 // padding-left: 32px;
 // padding-right: 32px;
 //   }
 
-//   &__nav{
-//       @media screen and (min-width: 768px){
-//   display: flex;
-//   align-items: center;
 
-//   }
-//   }
-// &__list{
+//   &__list{
 //     display: none;
-//   @media screen and (min-width: 768px){
+//   @media screen and (min-width: 736px){
 // display: flex;
-// margin-right: 94px;
+// // margin-right: 94px;
 //   }
 
-//     @media screen and (min-width: 1200px){
+//     @media screen and (min-width: 1248px){
 // display: flex;
-// margin-right: 322px;
+// // margin-right: 322px;
 //   }
 // }
 // &__item{
-//       @media screen and (min-width: 768px){
-//   margin-right: 16px; 
 
-//   &:last-child {
-//     margin-right: 0; 
-//   }
+//       @media screen and (min-width: 736px){
+//   // margin-right: 16px; 
+// gap: 16px;
 
-//   }
+//  }
 
-//         @media screen and (min-width: 1200px){
-//   margin-right: 20px; 
-
-//   &:last-child {
-//     margin-right: 0; 
-//   }
-
+//         @media screen and (min-width: 1248px){
+//   // margin-right: 20px; 
+// gap: 20px;
 //   }
 // }
 
+// &__nav{
+//   display: flex;
+//   align-items: center;
+//   justify-content:space-between;
+//   //   @media screen and (min-width: 736px){
+
+//   // }
+//   // @media screen and (min-width: 1248px){
+
+//   // }
+// }
+
 // &__link{
-//     color: #AE1332;
+//     color: $background-color;
 // text-align: center;
 // font-family: "DM Sans";
 // font-size: 14px;
@@ -65,20 +60,27 @@
 // letter-spacing: -0.56px;
 // }
 
+
+
 // &__logo{
-//     display: flex;
-// align-items: center;
-// gap: 8px;
+// display: flex;
+//   // @media screen and (min-width: 736px){
+
+//   // }
+//   // @media screen and (min-width: 1248px){
+
+//   // }
 // }
 
+
 // &__icon{
-// width: 16px;
-// height: 16px;
-//  fill: #AE1332;
+// // width: 16px;
+// // height: 16px;
+//  fill: $background-color;
 // }
 
 // &__description{
-//     color: #AE1332;
+//     color: $background-color;
 // text-align: center;
 // font-family: "DM Sans";
 // font-size: 14px;
@@ -90,65 +92,47 @@
 
 // }
 
-
 // &__basket{
 //     display: none;
  
-//   @media screen and (min-width: 768px){
+//   @media screen and (min-width: 736px){
 // display:flex;
-// width: 24px;
-// height: 24px;
+// // width: 24px;
+// // height: 24px;
 //  fill: #AE1332;
 
 
 //   }
-
 // }
-
-// // &__baskets{
-// //         display: none;
-// //   @media screen and (min-width: 768px){
-// //     display:flex;
-// // margin-left: 50;
-// //   }
-// //   @media screen and (min-width: 1200px){
-// //     display:flex;
-// // margin-left: 100;
-// //   }
-// // }
-
 
 
 // &__baskets{
-// //        @media screen and (min-width: 768px){
-// //     margin-left: 230px;
-// //   }
+//         display: none;
+//   @media screen and (min-width: 736px){
+//     display:flex;
+//     // margin-left: 230px;
+//   }
+//   @media screen and (min-width: 1248px){
+//     display:flex;
 
-// //            @media screen and (min-width: 1200px){
-// // margin-right: 562px;
-// //   }
-// order: 1;
+//   }
 // }
 
 
+
 // &__menu{
-//     display: flex;
-// justify-content: flex-end;
-//    @media screen and (min-width: 768px){
+//     display: block;
+//     border: none;
+//     background-color: transparent;
+// // justify-content: flex-end;
+//    @media screen and (min-width: 736px){
 //     display: none;
 //   }
 // }
  
 // &__burger{
-
-//     width: 24px;
-// height: 24px;
+// //     width: 24px;
+// // height: 24px;
 //  fill: #AE1332;
- 
-
-
 // }
-
-
-
 // }
