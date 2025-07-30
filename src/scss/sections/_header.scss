@@ -1,138 +1,85 @@
+.header {
+  background-color: $text-color;
 
-// .header{
+  @media screen and (min-width: 736px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list {
+    display: none;
+    @media screen and (min-width: 736px) {
+      display: flex;
+      gap: 16px;
+    }
+    @media screen and (min-width: 1248px) {
+      gap: 20px;
+    }
+  }
 
+  &__link {
+    color: $background-color;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @media screen and (min-width: 736px) {
+      margin-right: 150px;
+    }
+    @media screen and (min-width: 1248px) {
+      margin-right: 190px;
+    }
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: $background-color;
+  }
+  &__description {
+    color: $background-color;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+  }
+  &__basket {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: $background-color;
+  }
 
-//   @media screen and (min-width: 736px){
-// padding-top: 16px;
-// padding-bottom: 16px;
-// padding-left: 32px;
-// padding-right: 32px;
-//   }
+  &__baskets {
+    display: none;
+    @media screen and (min-width: 736px) {
+      display: flex;
+    }
+  }
+  &__menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+    @media screen and (min-width: 736px) {
+      display: none;
+    }
+  }
 
-
-//   &__list{
-//     display: none;
-//   @media screen and (min-width: 736px){
-// display: flex;
-// // margin-right: 94px;
-//   }
-
-//     @media screen and (min-width: 1248px){
-// display: flex;
-// // margin-right: 322px;
-//   }
-// }
-// &__item{
-
-//       @media screen and (min-width: 736px){
-//   // margin-right: 16px; 
-// gap: 16px;
-
-//  }
-
-//         @media screen and (min-width: 1248px){
-//   // margin-right: 20px; 
-// gap: 20px;
-//   }
-// }
-
-// &__nav{
-//   display: flex;
-//   align-items: center;
-//   justify-content:space-between;
-//   //   @media screen and (min-width: 736px){
-
-//   // }
-//   // @media screen and (min-width: 1248px){
-
-//   // }
-// }
-
-// &__link{
-//     color: $background-color;
-// text-align: center;
-// font-family: "DM Sans";
-// font-size: 14px;
-// font-style: normal;
-// font-weight: 400;
-// line-height: 18px; /* 128.571% */
-// letter-spacing: -0.56px;
-// }
-
-
-
-// &__logo{
-// display: flex;
-//   // @media screen and (min-width: 736px){
-
-//   // }
-//   // @media screen and (min-width: 1248px){
-
-//   // }
-// }
-
-
-// &__icon{
-// // width: 16px;
-// // height: 16px;
-//  fill: $background-color;
-// }
-
-// &__description{
-//     color: $background-color;
-// text-align: center;
-// font-family: "DM Sans";
-// font-size: 14px;
-// font-style: normal;
-// font-weight: 700;
-// line-height: 18px; /* 128.571% */
-// letter-spacing: -0.56px;
-// text-transform: uppercase;
-
-// }
-
-// &__basket{
-//     display: none;
- 
-//   @media screen and (min-width: 736px){
-// display:flex;
-// // width: 24px;
-// // height: 24px;
-//  fill: #AE1332;
-
-
-//   }
-// }
-
-
-// &__baskets{
-//         display: none;
-//   @media screen and (min-width: 736px){
-//     display:flex;
-//     // margin-left: 230px;
-//   }
-//   @media screen and (min-width: 1248px){
-//     display:flex;
-
-//   }
-// }
-
-
-
-// &__menu{
-//     display: block;
-//     border: none;
-//     background-color: transparent;
-// // justify-content: flex-end;
-//    @media screen and (min-width: 736px){
-//     display: none;
-//   }
-// }
- 
-// &__burger{
-// //     width: 24px;
-// // height: 24px;
-//  fill: #AE1332;
-// }
-// }
+  &__burger {
+    width: 24px;
+    height: 24px;
+    fill: $background-color;
+  }
+}
