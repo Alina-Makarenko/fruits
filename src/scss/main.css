@@ -400,9 +400,18 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(174, 19, 50);
 }
+.hero__elem {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 736px) {
+  .hero__elem {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 1248px) {
   .hero {
-    flex-direction: row;
     justify-content: space-around;
   }
 }

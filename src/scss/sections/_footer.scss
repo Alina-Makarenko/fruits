@@ -16,11 +16,10 @@
     }
   }
 
-  &__elem{
+  &__elem {
     display: flex;
     align-items: center;
     flex-direction: column;
-
   }
   &__wrap {
     display: flex;
@@ -30,7 +29,7 @@
     @media screen and (min-width: 1248px) {
       flex-direction: row;
       align-items: center;
-      justify-content:space-around;
+      justify-content: space-around;
     }
   }
   &__picture {
@@ -41,9 +40,6 @@
       width: 349px;
       height: 179px;
     }
-    // @media screen and (min-width: 1248px) {
-
-    // }
   }
 
   &__logo {
@@ -119,13 +115,12 @@
     flex-direction: column;
     align-items: center;
     gap: 14px;
-    &:nth-child(2){
+    &:nth-child(2) {
       text-align: center;
       @media screen and (min-width: 736px) {
-      
-      text-align: left;
-       gap: 20px;
-    }
+        text-align: left;
+        gap: 20px;
+      }
     }
   }
   &__contact {
