@@ -416,31 +416,26 @@ body {
   }
 }
 
+.organio {
+  padding-top: 144px;
+  padding-bottom: 144px;
+}
 .organio__list {
+  flex-direction: column;
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 16px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  row-gap: 14px;
-  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 44px;
 }
 @media screen and (min-width: 736px) {
   .organio__list {
-    -moz-column-gap: 16px;
-         column-gap: 16px;
-    row-gap: 16px;
-  }
-}
-@media screen and (min-width: 1248px) {
-  .organio__list {
-    gap: 24px;
-    margin-bottom: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }
 .organio__subject {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: "DM Sans";
@@ -450,9 +445,11 @@ body {
   line-height: 1;
   letter-spacing: -1.12px;
   text-transform: uppercase;
+  margin-top: 14px;
 }
 .organio__lead {
-  color: #FFF;
+  color: #fff;
+  margin-bottom: 44px;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: "DM Sans";
@@ -464,20 +461,15 @@ body {
 }
 .organio__item {
   flex-basis: 100%;
-  margin-bottom: 14px;
-  width: 335px;
-  height: 500px;
-  flex-shrink: 0;
+  border-radius: 20px;
 }
 @media screen and (min-width: 335px) {
   .organio__item {
-    margin-bottom: 16px;
     flex-basis: 450px;
   }
 }
 @media screen and (min-width: 736px) {
   .organio__item {
-    margin-bottom: 24px;
     width: 344px;
     flex-basis: calc((100% - 16px) / 2);
   }
@@ -489,34 +481,10 @@ body {
   }
 }
 .organio__item:nth-child(1) {
-  border-radius: 20px;
   background-color: rgb(248, 118, 107);
-  width: 316px;
-  height: 500px;
-  flex-shrink: 0;
-  flex-basis: 100%;
-}
-@media screen and (min-width: 335px) {
-  .organio__item:nth-child(1) {
-    margin-bottom: 16px;
-    flex-basis: 450px;
-  }
-}
-@media screen and (min-width: 736px) {
-  .organio__item:nth-child(1) {
-    margin-bottom: 24px;
-    width: 344px;
-    flex-basis: calc((100% - 16px) / 2);
-  }
-}
-@media screen and (min-width: 1248px) {
-  .organio__item:nth-child(1) {
-    width: 389px;
-    flex-basis: calc((100% - 48px) / 3);
-  }
 }
 .organio__text {
-  color: #FFF;
+  color: #fff;
   font-family: "DM Sans";
   font-size: 24px;
   font-style: normal;
@@ -528,7 +496,7 @@ body {
   margin-bottom: 8px;
 }
 .organio__plant {
-  color: #FFF;
+  color: #fff;
   margin-left: 24px;
   font-family: "DM Sans";
   font-size: 14px;
@@ -538,221 +506,37 @@ body {
   letter-spacing: -0.28px;
 }
 .organio__item:nth-child(2) {
-  border-radius: 20px;
-  flex-basis: 100%;
   background: rgb(237, 210, 81);
-  width: 316px;
-  height: 500px;
-  flex-shrink: 0;
-}
-@media screen and (min-width: 335px) {
-  .organio__item:nth-child(2) {
-    margin-bottom: 16px;
-    flex-basis: 450px;
-  }
-}
-@media screen and (min-width: 736px) {
-  .organio__item:nth-child(2) {
-    margin-bottom: 24px;
-    width: 344px;
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1248px) {
-  .organio__item:nth-child(2) {
-    width: 389px;
-    flex-basis: calc((100% - 48px) / 3);
-  }
 }
 .organio__item:nth-child(3) {
-  flex-basis: 100%;
-  width: 316px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 20px;
   background: rgb(157, 194, 98);
 }
-@media screen and (min-width: 335px) {
-  .organio__item:nth-child(3) {
-    margin-bottom: 16px;
-    flex-basis: 450px;
-  }
-}
-@media screen and (min-width: 736px) {
-  .organio__item:nth-child(3) {
-    margin-bottom: 24px;
-    width: 344px;
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1248px) {
-  .organio__item:nth-child(3) {
-    width: 389px;
-    flex-basis: calc((100% - 48px) / 3);
-  }
-}
 .organio__item:nth-child(4) {
-  flex-basis: 100%;
-  width: 316px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 20px;
   background-color: rgb(191, 214, 99);
-  margin-right: 10px;
-}
-@media screen and (min-width: 335px) {
-  .organio__item:nth-child(4) {
-    margin-bottom: 16px;
-    flex-basis: 450px;
-  }
-}
-@media screen and (min-width: 736px) {
-  .organio__item:nth-child(4) {
-    margin-bottom: 24px;
-    width: 344px;
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1248px) {
-  .organio__item:nth-child(4) {
-    width: 389px;
-    flex-basis: calc((100% - 48px) / 3);
-  }
 }
 .organio__item:nth-child(5) {
-  flex-basis: 100%;
-  width: 316px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 20px;
   background-color: rgb(233, 63, 41);
 }
-@media screen and (min-width: 335px) {
-  .organio__item:nth-child(5) {
-    margin-bottom: 16px;
-    flex-basis: 450px;
-  }
-}
-@media screen and (min-width: 736px) {
-  .organio__item:nth-child(5) {
-    margin-bottom: 24px;
-    width: 344px;
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1248px) {
-  .organio__item:nth-child(5) {
-    width: 389px;
-    flex-basis: calc((100% - 48px) / 3);
-  }
-}
 .organio__item:nth-child(6) {
-  flex-basis: 100%;
-  width: 316px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 20px;
   background-color: rgb(219, 79, 75);
 }
-@media screen and (min-width: 335px) {
-  .organio__item:nth-child(6) {
-    margin-bottom: 16px;
-    flex-basis: 450px;
-  }
-}
-@media screen and (min-width: 736px) {
-  .organio__item:nth-child(6) {
-    margin-bottom: 24px;
-    width: 344px;
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1248px) {
-  .organio__item:nth-child(6) {
-    width: 389px;
-    flex-basis: calc((100% - 48px) / 3);
-  }
-}
 .organio__item:nth-child(7) {
-  flex-basis: 100%;
-  width: 316px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 20px;
   background-color: rgb(155, 83, 102);
 }
-@media screen and (min-width: 335px) {
-  .organio__item:nth-child(7) {
-    margin-bottom: 16px;
-    flex-basis: 450px;
-  }
-}
-@media screen and (min-width: 736px) {
-  .organio__item:nth-child(7) {
-    margin-bottom: 24px;
-    width: 344px;
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1248px) {
-  .organio__item:nth-child(7) {
-    width: 389px;
-    flex-basis: calc((100% - 48px) / 3);
-  }
-}
 .organio__item:nth-child(8) {
-  flex-basis: 100%;
-  width: 316px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 20px;
   background-color: rgb(244, 127, 76);
 }
-@media screen and (min-width: 335px) {
-  .organio__item:nth-child(8) {
-    margin-bottom: 16px;
-    flex-basis: 450px;
-  }
-}
-@media screen and (min-width: 736px) {
-  .organio__item:nth-child(8) {
-    margin-bottom: 24px;
-    width: 344px;
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1248px) {
-  .organio__item:nth-child(8) {
-    width: 389px;
-    flex-basis: calc((100% - 48px) / 3);
-  }
-}
 .organio__item:nth-child(9) {
-  flex-basis: 100%;
-  width: 316px;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background-color: rgb(152, 179, 126);
   display: none;
-}
-@media screen and (min-width: 335px) {
-  .organio__item:nth-child(9) {
-    margin-bottom: 16px;
-  }
+  background-color: rgb(152, 179, 126);
 }
 @media screen and (min-width: 736px) {
   .organio__item:nth-child(9) {
-    margin-bottom: 24px;
-    width: 344px;
-    flex-basis: calc((100% - 30px) / 2);
     display: none;
   }
 }
 @media screen and (min-width: 1248px) {
   .organio__item:nth-child(9) {
-    width: 389px;
-    flex-basis: calc((100% - 48px) / 3);
     display: block;
   }
 }
@@ -767,10 +551,10 @@ body {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 200px;
-  background: #FFF;
+  background: #fff;
 }
 .organio__uah {
-  color: #AE1332;
+  color: #ae1332;
   font-family: "DM Sans";
   font-size: 18px;
   font-style: normal;
@@ -780,6 +564,28 @@ body {
   background-color: transparent;
   border: none;
 }
+.organio__bfon {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  background-color: rgb(157, 194, 98);
+  border-radius: 50%;
+}
+.organio__order {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.28; /* 128.571% */
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  border: none;
+}
+
 .fresh {
   background-color: rgb(174, 19, 50);
 }
