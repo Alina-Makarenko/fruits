@@ -435,9 +435,6 @@ body {
 }
 @media screen and (min-width: 1248px) {
   .organio__list {
-    -moz-column-gap: 24px;
-         column-gap: 24px;
-    row-gap: 24px;
     gap: 24px;
     margin-bottom: 24px;
   }
@@ -742,7 +739,6 @@ body {
 @media screen and (min-width: 335px) {
   .organio__item:nth-child(9) {
     margin-bottom: 16px;
-    flex-basis: 450px;
   }
 }
 @media screen and (min-width: 736px) {

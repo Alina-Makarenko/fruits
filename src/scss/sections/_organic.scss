@@ -16,8 +16,6 @@
     row-gap: 16px;
   }
   @media screen and (min-width: 1248px){
-     column-gap: 24px;
-    row-gap: 24px;
          gap: 24px; 
     margin-bottom: 24px;
        
@@ -273,7 +271,7 @@ background-color: $kiwi;
   @media screen and (min-width: 335px){
    margin-bottom:16px;
     
-          flex-basis: 450px;
+        
   }
   @media screen and (min-width: 736px){
     margin-bottom:24px;
