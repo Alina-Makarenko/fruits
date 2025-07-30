@@ -1,5 +1,28 @@
 .organio{
 
+    &__list{
+            display: flex;
+    justify-content: center;
+     gap: 16px; 
+    margin-bottom: 16px;
+ column-gap: 20px;
+    row-gap: 14px;
+     flex-wrap: wrap;
+  @media screen and (min-width: 335px){
+     
+  }
+  @media screen and (min-width: 736px){
+ column-gap: 16px;
+    row-gap: 16px;
+  }
+  @media screen and (min-width: 1248px){
+     column-gap: 24px;
+    row-gap: 24px;
+         gap: 24px; 
+    margin-bottom: 24px;
+       
+  }
+    }
     &__subject{
         color: #FFF;
 text-align: center;
@@ -23,28 +46,49 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.2;
 letter-spacing: -0.56px;
+
 }
 &__item{
+        flex-basis: 100%;
     margin-bottom:14px;
-    width: 389px;
+    width: 335px;
 height: 500px;
 flex-shrink: 0;
       @media screen and (min-width: 335px){
    margin-bottom:16px;
+   flex-basis: 450px;
   }
   @media screen and (min-width: 736px){
     margin-bottom:24px;
+       width: 344px;
+          flex-basis: calc((100% - 16px) / 2);
   }
   @media screen and (min-width: 1248px){
-  
+      width: 389px;
+       flex-basis: calc((100% - 48px) / 3);
+
   }
 }
 &__item:nth-child(1){
     border-radius: 20px;
 background-color: $strawberry;
-width: 389px;
+  width: 316px;
 height: 500px;
 flex-shrink: 0;
+    flex-basis: 100%;
+  @media screen and (min-width: 335px){
+   margin-bottom:16px;
+   flex-basis: 450px;
+  }
+  @media screen and (min-width: 736px){
+    margin-bottom:24px;
+       width: 344px;
+         flex-basis: calc((100% - 16px) / 2);
+  }
+  @media screen and (min-width: 1248px){
+      width: 389px;
+       flex-basis: calc((100% - 48px) / 3);
+  }
 }
 &__text{
     color: #FFF;
@@ -70,61 +114,178 @@ letter-spacing: -0.28px;
 }
 &__item:nth-child(2){
     border-radius: 20px;
+        flex-basis: 100%;
 background: $banana;
-width: 389px;
+  width: 316px;
 height: 500px;
 flex-shrink: 0;
+  @media screen and (min-width: 335px){
+   margin-bottom:16px;
+   flex-basis: 450px;
+  }
+  @media screen and (min-width: 736px){
+    margin-bottom:24px;
+       width: 344px;
+         flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1248px){
+      width: 389px;
+      flex-basis: calc((100% - 48px) / 3);
+  }
 }
 
  &__item:nth-child(3){
-    width: 389px;
+        flex-basis: 100%;
+    width: 316px;
 height: 500px;
 flex-shrink: 0;
 border-radius: 20px;
 background: $btn-color;
+  @media screen and (min-width: 335px){
+   margin-bottom:16px;
+   flex-basis: 450px;
+  }
+  @media screen and (min-width: 736px){
+    margin-bottom:24px;
+       width: 344px;
+         flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1248px){
+      width: 389px;
+      flex-basis: calc((100% - 48px) / 3);
+  }
 }
  &__item:nth-child(4){
-   width: 389px;
+        flex-basis: 100%;
+   width: 316px;
 height: 500px;
 flex-shrink: 0;
 border-radius: 20px;
 background-color:$lime;
+
+margin-right: 10px;
+  @media screen and (min-width: 335px){
+   margin-bottom:16px;
+   flex-basis: 450px;
+  }
+  @media screen and (min-width: 736px){
+    margin-bottom:24px;
+       width: 344px;
+         flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1248px){
+      width: 389px;
+       flex-basis: calc((100% - 48px) / 3);
+  }
 }
  &__item:nth-child(5){
-    width: 389px;
+        flex-basis: 100%;
+  width: 316px;
 height: 500px;
 flex-shrink: 0;
 border-radius: 20px;
 background-color: $apple;
+  @media screen and (min-width: 335px){
+   margin-bottom:16px;
+   flex-basis: 450px;
+  }
+  @media screen and (min-width: 736px){
+    margin-bottom:24px;
+       width: 344px;
+         flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1248px){
+      width: 389px;
+       flex-basis: calc((100% - 48px) / 3);
+  }
 }
  &__item:nth-child(6){
-    width: 389px;
+        flex-basis: 100%;
+      width: 316px;
 height: 500px;
 flex-shrink: 0;
 border-radius: 20px;
 background-color:$peach;
+  @media screen and (min-width: 335px){
+   margin-bottom:16px;
+   flex-basis: 450px;
+  }
+  @media screen and (min-width: 736px){
+    margin-bottom:24px;
+       width: 344px;
+         flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1248px){
+      width: 389px;
+      flex-basis: calc((100% - 48px) / 3);
+  }
 }
  &__item:nth-child(7){
-    width: 389px;
+        flex-basis: 100%;
+    width: 316px;
 height: 500px;
 flex-shrink: 0;
 border-radius: 20px;
 background-color: $plums;
+  @media screen and (min-width: 335px){
+   margin-bottom:16px;
+   flex-basis: 450px;
+  }
+  @media screen and (min-width: 736px){
+    margin-bottom:24px;
+       width: 344px;
+         flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1248px){
+      width: 389px;
+      flex-basis: calc((100% - 48px) / 3);
+  }
 }
  &__item:nth-child(8){
-    width: 389px;
+        flex-basis: 100%;
+    width: 316px;
 height: 500px;
 flex-shrink: 0;
 border-radius: 20px;
 background-color: $orange;
-
+  @media screen and (min-width: 335px){
+   margin-bottom:16px;
+   flex-basis: 450px;
+  }
+  @media screen and (min-width: 736px){
+    margin-bottom:24px;
+       width: 344px;
+         flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1248px){
+      width: 389px;
+      flex-basis: calc((100% - 48px) / 3);
+  }
 }
  &__item:nth-child(9){
-    width: 389px;
+        flex-basis: 100%;
+    width: 316px;
 height: 500px;
 flex-shrink: 0;
 border-radius: 20px;
 background-color: $kiwi;
+   display: none;
+  @media screen and (min-width: 335px){
+   margin-bottom:16px;
+    
+          flex-basis: 450px;
+  }
+  @media screen and (min-width: 736px){
+    margin-bottom:24px;
+       width: 344px;
+         flex-basis: calc((100% - 30px) / 2);
+     display: none;
+  }
+  @media screen and (min-width: 1248px){
+      width: 389px;
+      flex-basis: calc((100% - 48px) / 3);
+  display: block;
+  }
 }
 &__btn{
 display: flex;
