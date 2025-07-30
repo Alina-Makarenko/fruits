@@ -235,17 +235,18 @@ align-items: center;
     }
   }
 
-  // &__elem {
-  //   display: flex;
-  //   flex-direction: column;
-  //   @media screen and (min-width: 736px) {
-  //     display: flex;
-  //     flex-direction: row;
-  //     // justify-content:end;
-  //   }
+  &__elem {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 736px) {
+      display: flex;
+      flex-direction: row;
+      // justify-content:end;
+    }
+  }
 
     @media screen and (min-width: 1248px) {
-      flex-direction: row;
+     
       justify-content: space-around;
     }
   }
