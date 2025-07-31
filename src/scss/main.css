@@ -569,7 +569,129 @@ body {
 }
 
 .fresh {
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: rgb(174, 19, 50);
+  color: rgb(255, 255, 255);
+}
+.fresh__title {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-family: "DM Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1.28px;
+  text-transform: uppercase;
+  position: absolute;
+  order: 3;
+}
+@media screen and (min-width: 736px) {
+  .fresh__title {
+    font-size: 54px;
+    line-height: 54px;
+    letter-spacing: -2.16px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .fresh__title {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -2.56px;
+  }
+}
+.fresh__images {
+  list-style: none;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.fresh__image {
+  border-radius: 20px;
+}
+.fresh__blueberries {
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .fresh__blueberries {
+    display: flex;
+  }
+}
+.fresh__specification {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fresh__description {
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .fresh__description {
+    display: flex;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+  }
+}
+.fresh__form {
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .fresh__form {
+    display: flex;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    overflow: hidden;
+    margin: 80px;
+  }
+}
+.fresh__input {
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .fresh__input {
+    display: flex;
+    border-radius: 100px;
+    border: none;
+    background: rgb(174, 19, 50);
+  }
+}
+.fresh__button {
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .fresh__button {
+    display: inline-flex;
+    padding: 15px 35px;
+    align-items: center;
+    border-radius: 100px;
+    background: #9DC162;
+    border: #9DC162;
+    border: none;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+  }
 }
 
 .footer {
