@@ -12,14 +12,15 @@
       flex-direction: row;
       justify-content: space-between;
     }
-    @media screen and (min-width: 1248px) {
-    }
   }
 
   &__elem {
     display: flex;
     align-items: center;
     flex-direction: column;
+    // margin-bottom: 24px;
+    @media screen and (min-width: 736px) {
+      margin-bottom: 80px;
   }
   &__wrap {
     display: flex;
@@ -27,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     @media screen and (min-width: 1248px) {
-      flex-direction: row;
+      // flex-direction: column;
       align-items: center;
       justify-content: space-around;
     }
@@ -39,16 +40,6 @@
     @media screen and (min-width: 736px) {
       width: 349px;
       height: 179px;
-    }
-  }
-
-  &__logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 24px;
-    @media screen and (min-width: 736px) {
-      margin-bottom: 80px;
     }
   }
   &__icon {
@@ -64,6 +55,13 @@
     line-height: 1.28;
     letter-spacing: -0.56px;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    
+    }
   }
 
   &__list {
@@ -72,6 +70,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+
     margin-bottom: 44px;
     @media screen and (min-width: 1248px) {
       margin-left: 243px;
