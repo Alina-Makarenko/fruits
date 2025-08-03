@@ -867,4 +867,13 @@ body {
   font-weight: 400;
   line-height: 1.28;
   text-transform: uppercase;
+}
+
+.menu {
+  display: none;
+}
+@media screen and (max-width: 355px) {
+  .menu {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */
