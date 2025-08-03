@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/fruits/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fruits/assets/index-3093c95b.css">
+    <link rel="stylesheet" href="/fruits/assets/index-a061d56c.css">
   </head>
   <body>
     <header class="header">
@@ -519,25 +519,47 @@
             <p class="fresh__description">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for<br>anyone looking to eat
                 healthier or support local farmers. Order your box today and start<br>enjoying the best that nature has to
                 offer!</p>
-        <div class="fresh__form">
+        
+            <form action="" class="fresh__form">
             <input type="email" placeholder="Enter email..." class="fresh__input" >
-            <button class="fresh__button">Send</button>
-            </div>
+            <button class="fresh__button" type="button">Send</button>
+            </form>
 </div>
     </div>
+       <!-- <script src="../js/modal.js"></script> -->
 </section>
     <footer class="footer">
   <div class="container">
     <div class="footer__wrap">
+      
       <div class="footer__elem">
-        <a href="./header.html" class="footer__logo">
+        <picture>
+        <source srcset="/fruits/assets/pink-tablet@1x-a723cc47.webp 1x, /fruits/assets/pink-tablet@2x-e41c0c12.webp 2x" media="(min-width:1248px)">
+        <source srcset="/fruits/assets/pink-tablet@1x-a723cc47.webp 1x, /fruits/assets/pink-tablet@2x-e41c0c12.webp 2x" media="(min-width:736px)">
+        <source srcset="/fruits/assets/pink-mobile@1x-ee31b64b.webp 1x, /fruits/assets/pink-mobile@2x-f57c286c.webp 2x" media="(max-width:735px)">
+        <img src="" alt="" class="footer__picture">
+      </picture>
+        <a href="./header.html" class="footer__links">
           <svg class="footer__icon">
             <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-vector"></use>
           </svg>
           fresh harvest box
         </a>
       </div>
-    </div>
+    
+<ul class="footer__list">
+        <li class="footer__item">
+          <a href="" class="footer__sec">How It Works</a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__sec">Fruits</a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__sec">Contacts</a>
+        </li>
+      </ul>
+</div>
+
 
     <div class="footer__wrapper">
       <ul class="footer__items">
@@ -586,7 +608,7 @@
 
     <section class="modal">
   <h2 class="modal__title"></h2>
-  <button type="button" class="modal__btn"></button>
+  <button type="button" class="modal__btn"> g</button>
   <ul class="modal__list">
     <li class="modal__item">
       <h3 class="modal__subtitle"></h3>
@@ -670,6 +692,7 @@
     <img src="" alt="" class="modal__pictures" />
   </picture>
   <p></p>
+   <!-- <script src="../js/modal.js" type="module"></script> -->
 </section>
 
     <section class="menu">
