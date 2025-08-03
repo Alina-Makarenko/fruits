@@ -570,6 +570,9 @@ body {
   flex-shrink: 0;
   background-color: rgb(157, 194, 98);
   border-radius: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 .organio__order {
   background-color: transparent;
@@ -584,6 +587,14 @@ body {
   letter-spacing: -0.56px;
   text-transform: uppercase;
   border: none;
+  position: absolute;
+  top: 35px;
+  transform: rotate(-0.07turn);
+}
+.organio__svg {
+  width: 14px;
+  height: 14px;
+  fill: rgb(255, 255, 255);
 }
 
 .fresh {
@@ -593,7 +604,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .fresh__title {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-align: center;
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-family: "DM Sans";
@@ -636,7 +647,7 @@ body {
   }
 }
 .fresh__specification {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -646,7 +657,7 @@ body {
 @media screen and (min-width: 736px) {
   .fresh__description {
     display: flex;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     font-family: "DM Sans";
@@ -655,6 +666,8 @@ body {
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.56px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 .fresh__form {
@@ -664,9 +677,8 @@ body {
   .fresh__form {
     display: flex;
     border-radius: 100px;
-    border: 1px solid #FFF;
+    border: 1px solid rgb(255, 255, 255);
     overflow: hidden;
-    margin: 80px;
   }
 }
 .fresh__input {
@@ -677,6 +689,14 @@ body {
     display: flex;
     border-radius: 100px;
     border: none;
+    color: rgb(255, 255, 255);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+    opacity: 0.5;
     background: rgb(174, 19, 50);
   }
 }
@@ -689,16 +709,16 @@ body {
     padding: 15px 35px;
     align-items: center;
     border-radius: 100px;
-    background: #9DC162;
-    border: #9DC162;
-    color: #FFF;
+    background: rgb(164, 203, 102);
+    border: rgb(164, 203, 102);
+    color: rgb(255, 255, 255);
     font-family: "DM Sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 128.571% */
     letter-spacing: -0.56px;
-    color: #FFF;
+    color: rgb(255, 255, 255);
     font-family: "DM Sans";
     font-size: 14px;
     font-style: normal;
@@ -845,4 +865,13 @@ body {
   font-weight: 400;
   line-height: 1.28;
   text-transform: uppercase;
+}
+
+.menu {
+  display: none;
+}
+@media screen and (max-width: 355px) {
+  .menu {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */
