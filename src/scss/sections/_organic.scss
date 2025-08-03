@@ -163,6 +163,9 @@ height: 80px;
 flex-shrink: 0;
 background-color: $btn-color;
 border-radius: 50%;
+position: relative;
+margin-right: auto;
+margin-left: auto;
  }
  &__order{
   background-color: transparent;
@@ -178,5 +181,14 @@ line-height: 1.28; /* 128.571% */
 letter-spacing: -0.56px;
 text-transform: uppercase;
 border: none;
+position: absolute;
+top: 35px;
+transform: rotate(-0.07turn);
+ }
+ &__svg{
+width: 14px;
+height: 14px;
+fill:$text-color;
+
  }
 }

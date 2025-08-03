@@ -570,6 +570,9 @@ body {
   flex-shrink: 0;
   background-color: rgb(157, 194, 98);
   border-radius: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 .organio__order {
   background-color: transparent;
@@ -584,6 +587,14 @@ body {
   letter-spacing: -0.56px;
   text-transform: uppercase;
   border: none;
+  position: absolute;
+  top: 35px;
+  transform: rotate(-0.07turn);
+}
+.organio__svg {
+  width: 14px;
+  height: 14px;
+  fill: rgb(255, 255, 255);
 }
 
 .fresh {
