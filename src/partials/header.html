@@ -26,13 +26,33 @@
         </svg>
       </a>
 
-      <button class="header__menu" type="button">
-        <svg class="header__burger">
+      <button class="header__btn" type="button" data-menu-open>
+        <svg class="header__burger" >
           <use href="../img/symbol-defs.svg#icon-burger"></use>
         </svg>
       </button>
-
     </nav>
   </div>
+
+<div class="menu">
+
+    <div class="menu is-hidden" data-menu>
+        <button type="button" class="menu__close" data-menu-close>
+                <svg class="menu__cross">
+                    <use href="../img/symbol-defs.svg#icon-cross"></use>
+                </svg>            
+        </button>
+        <ul class="menu__list">
+            <li>How It Works</li>
+            <li>Fruits</li>
+            <li>Contacts</li>
+            <li>
+                <svg class="menu__basket">
+                    <use href="../img/symbol-defs.svg#icon-basket"></use>
+                </svg>
+            </li>
+        </ul>
+    </div>
+</div>
 </header>
 
