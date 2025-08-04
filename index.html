@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/fruits/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fruits/assets/index-a061d56c.css">
+    <link rel="stylesheet" href="/fruits/assets/index-95108c0c.css">
   </head>
   <body>
     <header class="header">
@@ -42,14 +42,34 @@
         </svg>
       </a>
 
-      <button class="header__menu" type="button">
-        <svg class="header__burger">
+      <button class="header__btn" type="button" data-menu-open>
+        <svg class="header__burger" >
           <use href="../img/symbol-defs.svg#icon-burger"></use>
         </svg>
       </button>
-
     </nav>
   </div>
+
+<div class="menu">
+
+    <div class="menu is-hidden" data-menu>
+        <button type="button" class="menu__close" data-menu-close>
+                <svg class="menu__cross">
+                    <use href="../img/symbol-defs.svg#icon-cross"></use>
+                </svg>            
+        </button>
+        <ul class="menu__list">
+            <li>How It Works</li>
+            <li>Fruits</li>
+            <li>Contacts</li>
+            <li>
+                <svg class="menu__basket">
+                    <use href="../img/symbol-defs.svg#icon-basket"></use>
+                </svg>
+            </li>
+        </ul>
+    </div>
+</div>
 </header>
 
 
@@ -695,19 +715,9 @@
    <!-- <script src="../js/modal.js" type="module"></script> -->
 </section>
 
-    <section class="menu">
-    <ul class="menu__list">
-        <li>How It Works</li>
-        <li>Fruits</li>
-        <li>Contacts</li>
-        <li>
-            <svg class="menu__basket">
-                <use href="../img/symbol-defs.svg#icon-basket"></use>
-            </svg>
-        </li>
-    </ul>
-</section>
     
     
+    
+    <script src="./js/menu.js"></script>
   </body>
 </html>
