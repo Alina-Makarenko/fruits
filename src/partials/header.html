@@ -14,10 +14,12 @@
       </ul>
 
       <div class="header__logo">
-      <svg class="header__icon">
-        <use href="../img/symbol-defs.svg#icon-vector"></use>
-      </svg>
-      <a href="./header.html" class="header__description">FRESH HARVEST BOX</a>
+        <svg class="header__icon">
+          <use href="../img/symbol-defs.svg#icon-vector"></use>
+        </svg>
+        <a href="./header.html" class="header__description"
+          >FRESH HARVEST BOX</a
+        >
       </div>
 
       <a href="#" class="header__baskets">
@@ -27,33 +29,29 @@
       </a>
 
       <button class="header__btn" type="button" data-menu-open>
-        <svg class="header__burger" >
+        <svg class="header__burger">
           <use href="../img/symbol-defs.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="menu__close" data-menu-close>
+        <svg class="menu__cross">
+          <use href="../img/symbol-defs.svg#icon-arrow"></use>
         </svg>
       </button>
     </nav>
   </div>
-
-
-
-    <div class="menu is-hidden" data-menu>
-      <div class="menu__box">
-        <button type="button" class="menu__close" data-menu-close>
-                <svg class="menu__cross">
-                    <use href="../img/symbol-defs.svg#icon-cross"></use>
-                </svg>            
-        </button>
-        <ul class="menu__list">
-            <li>How It Works</li>
-            <li>Fruits</li>
-            <li>Contacts</li>
-           </ul>
-                <svg class="menu__basket">
-                    <use href="../img/symbol-defs.svg#icon-basket"></use>
-                </svg>
-          </div> 
-        
-    </div>
-
 </header>
 
+<div class="menu is-hidden" data-menu>
+  <div class="menu__box">
+    <ul class="menu__list">
+      <li class="menu__item">How It Works</li>
+      <li class="menu__item">Fruits</li>
+      <li class="menu__item">Contacts</li>
+    </ul>
+
+    <svg class="menu__basket">
+      <use href="../img/symbol-defs.svg#icon-basket"></use>
+    </svg>
+  </div>
+</div>
