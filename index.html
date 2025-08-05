@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/fruits/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fruits/assets/index-95108c0c.css">
+    <link rel="stylesheet" href="/fruits/assets/index-b8e62e4b.css">
   </head>
   <body>
     <header class="header">
@@ -50,9 +50,10 @@
     </nav>
   </div>
 
-<div class="menu">
+
 
     <div class="menu is-hidden" data-menu>
+      <div class="menu__box">
         <button type="button" class="menu__close" data-menu-close>
                 <svg class="menu__cross">
                     <use href="../img/symbol-defs.svg#icon-cross"></use>
@@ -62,14 +63,14 @@
             <li>How It Works</li>
             <li>Fruits</li>
             <li>Contacts</li>
-            <li>
+           </ul>
                 <svg class="menu__basket">
                     <use href="../img/symbol-defs.svg#icon-basket"></use>
                 </svg>
-            </li>
-        </ul>
+          </div> 
+        
     </div>
-</div>
+
 </header>
 
 
@@ -136,7 +137,7 @@
         class="hero__picture"
       />
     </picture>
-    <button type="button" class="hero__button">
+    <button type="button" class="hero__button" id="qwert">
       shop <br />
       now
     </button>
@@ -505,7 +506,7 @@
       </li>
     </ul>
     <div class="organio__bfon">
-      <button class="organio__order">
+      <button type="button" class="organio__order" data-modal-open>
         <svg class="organio__svg">
           <use href="../img/symbol-defs.svg#icon-arrow"></use>
         </svg>
@@ -549,11 +550,10 @@
         
             <form action="" class="fresh__form">
             <input type="email" placeholder="Enter email..." class="fresh__input" >
-            <button class="fresh__button" type="button">Send</button>
+            <button class="fresh__button" type="button" data-element-open>Send</button>
             </form>
 </div>
-    </div>
-       <!-- <script src="../js/modal.js"></script> -->
+    </div>   
 </section>
     <footer class="footer">
   <div class="container">
@@ -633,9 +633,9 @@
   </div>
 </footer>
 
-    <section class="modal">
+    <div class="modal is-hidden" data-modal>
   <h2 class="modal__title"></h2>
-  <button type="button" class="modal__btn"> g</button>
+  <button type="button" class="modal__btn" data-modal-close> g</button>
   <ul class="modal__list">
     <li class="modal__item">
       <h3 class="modal__subtitle"></h3>
@@ -719,12 +719,16 @@
     <img src="" alt="" class="modal__pictures" />
   </picture>
   <p></p>
-   <!-- <script src="../js/modal.js" type="module"></script> -->
-</section>
+   
+</div>
 
     
+    <div class="element is-hidden" data-element>
+    <button class="element__btn" type="button" data-element-close>g</button>
+</div>
+   
     
-    
-    <script src="./js/menu.js"></script>
+     
+ 
   </body>
 </html>
