@@ -1044,6 +1044,55 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+.modal__item {
+  width: 273px;
+  height: 356px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.modal__item:nth-child(1) {
+  background-color: rgb(248, 118, 107);
+}
+.modal__item:nth-child(2) {
+  background-color: rgb(237, 210, 81);
+}
+.modal__item:nth-child(3) {
+  background-color: rgb(191, 214, 99);
+}
+.modal__list {
+  display: flex;
+}
+.modal__text {
+  margin-top: 40px;
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -0.96px;
+}
+.modal__plant {
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.28px;
+}
+.modal__img {
+  height: 250px;
+  display: block;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
 
 .menu {
   position: fixed;
