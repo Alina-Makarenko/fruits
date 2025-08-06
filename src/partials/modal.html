@@ -1,7 +1,11 @@
 <div class="modal is-hidden" data-modal>
   <div class="modal__box">
-  <h2 class="modal__title"></h2>
-  <button type="button" class="modal__btn" data-modal-close> g</button>
+  <h2 class="modal__title">Your Order</h2>
+  <button type="button" class="modal__btn" data-modal-close> 
+       <svg class="mobal__svg">
+          <use href="../img/symbol-defs.svg#icon-basket"></use>
+        </svg>
+  </button>
   <ul class="modal__list">
     <li class="modal__item">
  <h1 class="modal__text">Strawberry Basket</h1>
@@ -87,21 +91,31 @@
         class="modal__input"
         required
         placeholder="Enter card.." /></label
-    ><label class="modal__label" for="user-comment">
+    ><label class="modal__labet" for="user-comment">
       <textarea
-        class="modal__coment"
+        class="modal__input"
         placeholder="Enter comments..."
         id="user-comment"
       ></textarea>
     </label>
-    <button type="submit" class="modal__button">Submit</button>
+    
   </form>
-  <picture class="modal__picture">
-    <source />
-    <source />
-    <source />
-    <img src="" alt="" class="modal__pictures" />
+  <div class="modal__div">
+  <button type="submit" class="modal__button">Submit</button>
+  <picture class="modal__imeg">
+   <source
+            src="./img/desktop/comp-girl@1x.webp 1x , ./img/desktop/comp-girl@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/planhet-girl@1x.webp 1x , ./img/tablet/planhet-girl@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/tell-girl@1x.webp 1x , ./img/mobile/tell-girl@2x.webp 2x"
+            media="(max-width: 767px)" />
+        <img src="./img/desktop/comp-girl@1x.webp" alt="" class="modal__imeg"
+      />
   </picture>
+  </div>
   <p></p>
    </div>
 </div>
