@@ -1,14 +1,7 @@
-//   @media screen and (min-width: 736px){
-
-//   }
-//   @media screen and (min-width: 1248px){
-
-//   }
-
 .fresh {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: $background-color;
+  // background-color: $background-color;
   color: $text-color;
 
   &__title {
@@ -58,10 +51,9 @@
   //=========================================
 
   &__specification {
-display: flex;
-flex-direction: column;
-align-items: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   //====
@@ -77,7 +69,7 @@ align-items: center;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 18px; 
+      line-height: 18px;
       letter-spacing: -0.56px;
       margin-top: 80px;
       margin-bottom: 80px;
@@ -87,37 +79,33 @@ align-items: center;
 
   //================
   &__form {
-
     display: none;
-  @media screen and (min-width: 736px){
-    display: flex; 
-    border-radius: 100px;
-border: 1px solid $text-color;
- overflow: hidden;
-//  margin: 80px;
-
-
-
-   }
+    @media screen and (min-width: 736px) {
+      display: flex;
+      border-radius: 100px;
+      border: 1px solid $text-color;
+      overflow: hidden;
+      //  margin: 80px;
+    }
   }
 
   &__input {
     display: none;
     @media screen and (min-width: 736px) {
-                  display: flex;
-          border-radius: 100px;
-border: none;
-color: $text-color;
+      display: flex;
+      border-radius: 100px;
+      border: none;
+      color: $text-color;
 
-font-family: "DM Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px; /* 128.571% */
-letter-spacing: -0.56px;
-    //   opacity: 0.3
-opacity: 0.5;
-    background: $background-color;
+      font-family: 'DM Sans';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 128.571% */
+      letter-spacing: -0.56px;
+      //   opacity: 0.3
+      opacity: 0.5;
+      background: $background-color;
     }
   }
 
@@ -128,28 +116,28 @@ opacity: 0.5;
       display: inline-flex;
       padding: 15px 35px;
       align-items: center;
-border-radius: 100px;
-background: $wrap-color;
-border: $wrap-color;
-//текст
-color: $text-color;
+      border-radius: 100px;
+      background: $wrap-color;
+      border: $wrap-color;
+      //текст
+      color: $text-color;
 
-font-family: "DM Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px; /* 128.571% */
-letter-spacing: -0.56px;
+      font-family: 'DM Sans';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 128.571% */
+      letter-spacing: -0.56px;
 
-color: $text-color;
+      color: $text-color;
 
-font-family: "DM Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px; /* 128.571% */
-letter-spacing: -0.56px;
-text-transform: capitalize;
+      font-family: 'DM Sans';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 128.571% */
+      letter-spacing: -0.56px;
+      text-transform: capitalize;
     }
   }
 }
