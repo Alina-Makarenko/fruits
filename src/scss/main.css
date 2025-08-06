@@ -1045,12 +1045,19 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+.modal__btn {
+  position: relative;
+  top: -25px;
+  right: -850px;
+}
 .modal__item {
-  width: 273px;
-  height: 356px;
+  width: 257px;
+  height: 308px;
   flex-shrink: 0;
   border-radius: 20px;
   margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .modal__item:nth-child(1) {
   background-color: rgb(248, 118, 107);
@@ -1086,15 +1093,18 @@ body {
   letter-spacing: -0.28px;
 }
 .modal__img {
-  height: 250px;
+  height: 200px;
   display: block;
 }
 .modal__box {
   opacity: 1;
   width: 891px;
-  height: 811px;
+  height: 911px;
   border-radius: 4px;
   background: #FFF;
+  position: absolute;
+  top: 60px;
+  left: 320px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   transition-property: transform;
   transition-duration: 1500ms;
@@ -1115,6 +1125,7 @@ body {
 .modal__button {
   margin-top: 20px;
   display: flex;
+  position: absolute;
 }
 .modal__input {
   width: 448px;
@@ -1133,14 +1144,31 @@ body {
   border: 1px solid #000;
   opacity: 0.3;
 }
-.modal__coment {
-  width: 360px;
-  height: 145px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  border: 1px solid #000;
-  padding: 15px 0px 112px 24px;
-  opacity: 0.3;
+.modal__div {
+  display: flex;
+}
+.modal__imeg {
+  margin-left: auto;
+  position: relative;
+  top: -180px;
+  width: 471px;
+  height: 458px;
+  display: block;
+  right: -10px;
+}
+.modal__title {
+  color: rgb(174, 19, 50);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px; /* 110% */
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+}
+.modal__svg {
+  fill: aquamarine;
 }
 
 .is-hidden {
