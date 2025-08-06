@@ -18,9 +18,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    // margin-bottom: 24px;
+
     @media screen and (min-width: 736px) {
       margin-bottom: 80px;
+    }
   }
   &__wrap {
     display: flex;
@@ -28,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     @media screen and (min-width: 1248px) {
-      // flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: space-around;
     }
@@ -42,6 +43,7 @@
       height: 179px;
     }
   }
+
   &__icon {
     width: 16px;
     height: 16px;
@@ -60,8 +62,6 @@
     justify-content: center;
     gap: 8px;
     margin-bottom: 24px;
-    
-    }
   }
 
   &__list {
