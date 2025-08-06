@@ -1047,7 +1047,7 @@ body {
 }
 .modal__btn {
   position: relative;
-  top: -25px;
+  top: -60px;
   right: -850px;
 }
 .modal__item {
@@ -1166,9 +1166,13 @@ body {
   line-height: 44px; /* 110% */
   letter-spacing: -1.6px;
   text-transform: uppercase;
+  margin-top: 40px;
 }
-.modal__svg {
-  fill: aquamarine;
+.modal__btn {
+  padding: 7px 7px 7px 7px;
+  color: rgb(174, 19, 50);
+  border: none;
+  background-color: transparent;
 }
 
 .is-hidden {
