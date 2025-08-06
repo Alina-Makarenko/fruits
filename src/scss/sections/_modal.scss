@@ -17,7 +17,7 @@ width: 100%;
 
  &__btn{
     position: relative; 
-top: -25px;
+top: -60px;
 right: -850px;
 }
 
@@ -153,9 +153,14 @@ font-weight: 500;
 line-height: 44px; /* 110% */
 letter-spacing: -1.6px;
 text-transform: uppercase;
+margin-top: 40px;
 }
-&__svg{
-    fill: aquamarine;
+
+&__btn{
+padding: 7px 7px 7px 7px;
+color:$background-color;
+border: none;
+background-color: transparent;
 }
 }
  .is-hidden {
