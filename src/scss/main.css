@@ -1037,6 +1037,7 @@ body {
 }
 
 .modal {
+  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   left: 0;
@@ -1087,6 +1088,59 @@ body {
 .modal__img {
   height: 250px;
   display: block;
+}
+.modal__box {
+  opacity: 1;
+  width: 891px;
+  height: 811px;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  transition-property: transform;
+  transition-duration: 1500ms;
+  transition-timing-function: ease-in;
+  transform: scale(1);
+}
+.modal__labet {
+  display: flex;
+  color: rgba(174, 19, 50, 0.1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.12px;
+  margin-left: 40px;
+  position: relative;
+}
+.modal__button {
+  margin-top: 20px;
+  display: flex;
+}
+.modal__input {
+  width: 448px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding-left: 24px;
+  width: 360px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid #000;
+  opacity: 0.3;
+}
+.modal__coment {
+  width: 360px;
+  height: 145px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #000;
+  padding: 15px 0px 112px 24px;
+  opacity: 0.3;
 }
 
 .is-hidden {
