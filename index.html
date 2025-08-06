@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/fruits/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fruits/assets/index-b4dbe16e.css">
+    <link rel="stylesheet" href="/fruits/assets/index-f7d39870.css">
   </head>
   <body>
     <header class="header">
@@ -30,10 +30,12 @@
       </ul>
 
       <div class="header__logo">
-      <svg class="header__icon">
-        <use href="../img/symbol-defs.svg#icon-vector"></use>
-      </svg>
-      <a href="./header.html" class="header__description">FRESH HARVEST BOX</a>
+        <svg class="header__icon">
+          <use href="../img/symbol-defs.svg#icon-vector"></use>
+        </svg>
+        <a href="./header.html" class="header__description"
+          >FRESH HARVEST BOX</a
+        >
       </div>
 
       <a href="#" class="header__baskets">
@@ -43,36 +45,32 @@
       </a>
 
       <button class="header__btn" type="button" data-menu-open>
-        <svg class="header__burger" >
+        <svg class="header__burger">
           <use href="../img/symbol-defs.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="menu__close" data-menu-close>
+        <svg class="menu__cross">
+          <use href="../img/symbol-defs.svg#icon-arrow"></use>
         </svg>
       </button>
     </nav>
   </div>
-
-
-
-    <div class="menu is-hidden" data-menu>
-      <div class="menu__box">
-        <button type="button" class="menu__close" data-menu-close>
-                <svg class="menu__cross">
-                    <use href="../img/symbol-defs.svg#icon-cross"></use>
-                </svg>            
-        </button>
-        <ul class="menu__list">
-            <li>How It Works</li>
-            <li>Fruits</li>
-            <li>Contacts</li>
-           </ul>
-                <svg class="menu__basket">
-                    <use href="../img/symbol-defs.svg#icon-basket"></use>
-                </svg>
-          </div> 
-        
-    </div>
-
 </header>
 
+<div class="menu is-hidden" data-menu>
+  <div class="menu__box">
+    <ul class="menu__list">
+      <li class="menu__item">How It Works</li>
+      <li class="menu__item">Fruits</li>
+      <li class="menu__item">Contacts</li>
+    </ul>
+
+    <svg class="menu__basket">
+      <use href="../img/symbol-defs.svg#icon-basket"></use>
+    </svg>
+  </div>
+</div>
 
     <section class="hero">
   <div class="container">
@@ -177,7 +175,7 @@
         </div>
       </div>
 
-      <div class="hero__wrapper">
+      <div class="hero__wrappers">
         <div class="hero__box hero__color">
           <h3 class="hero__subtitles">Fruit</h3>
           <picture>
@@ -256,12 +254,12 @@
     </ul>
 
     <picture>
-      <source src="../img/desktop/berries-desktop.webp" media="(min-width: 1200px)" />
-      <source src="../img/tablet/berries-tablet.webp" media="(min-width: 768px)" />
-      <source src="../img/mobile/berries-mobile.webp" media="(max-width: 767px)" />
+      <source src="/fruits/assets/berries-desktop-006a9a6e.webp" media="(min-width: 1200px)" />
+      <source src="/fruits/assets/berries-tablet-3186c3b5.webp" media="(min-width: 768px)" />
+      <source src="/fruits/assets/berries-mobile-58414cb3.webp" media="(max-width: 767px)" />
       <img
-        src="../img/desktop/berries-desktop.webp"
-        class="order__img"
+        src="/fruits/assets/berries-desktop-006a9a6e.webp"
+        class="order__picture"
         alt="Fruit Basket"  />
     </picture>
   </div>
@@ -522,23 +520,23 @@
             <ul class="fresh__images">
             <li class="fresh__melon">
                 <picture class="fresh__picture">
-                    <source srcset="../img/desktop/melon-desktop@1x.webp 1x, ../img/desktop/melon-desktop@2x.webp 2x"
+                    <source srcset="/fruits/assets/melon-desktop@1x-0bca1c6e.webp 1x, /fruits/assets/melon-desktop@2x-1b3da2c4.webp 2x"
                         media="(min-width:1248px)">
-                    <source srcset="../img/tablet/melon-tablet@1x.webp 1x, ../img/tablet/melon-tablet@2x.webp 2x"
+                    <source srcset="/fruits/assets/melon-tablet@1x-2786e7a9.webp 1x, /fruits/assets/melon-tablet@2x-f9be18a5.webp 2x"
                         media="(min-width:736px)">
-                    <source srcset="../img/mobile/melon-mobile@1x.webp 1x, ../img/mobile/melon-mobile@2x.webp 2x"
+                    <source srcset="/fruits/assets/melon-mobile@1x-3b0f4ec8.webp 1x, /fruits/assets/melon-mobile@2x-c04e831f.webp 2x"
                         media="(min-width:355px)">
-                    <img src="../img/desktop/melon-desktop@1x.webp" class="fresh__image" alt="melon">
+                    <img src="/fruits/assets/melon-desktop@1x-0bca1c6e.webp" class="fresh__image" alt="melon">
                 </picture>
             </li>
             <li class="fresh__blueberries">
                 <picture>
                     <source
-                        srcset="../img/desktop/blueberry-desktop@1x.webp 1x, ../img/desktop/blueberry-desktop@2x.webp 2x"
+                        srcset="/fruits/assets/blueberry-desktop@1x-582ef66b.webp 1x, /fruits/assets/blueberry-desktop@2x-a2c1bf46.webp 2x"
                         media="(min-width:1248px)">
-                    <source srcset="../img/tablet/blueberry-tablet@1x.webp 1x, ../img/tablet/blueberry-tablet@2x.webp 2x"
+                    <source srcset="/fruits/assets/blueberry-tablet@1x-d291f93c.webp 1x, /fruits/assets/blueberry-tablet@2x-0d4be548.webp 2x"
                         media="(min-width:736px)">
-                    <img src="../img/desktop/blueberry-desktop@1x.webp" class="fresh__image " alt="melon">
+                    <img src="/fruits/assets/blueberry-desktop@1x-582ef66b.webp" class="fresh__image " alt="melon">
                 </picture>
             </li>
             </ul>
@@ -558,14 +556,26 @@
     <footer class="footer">
   <div class="container">
     <div class="footer__wrap">
-      
       <div class="footer__elem">
         <picture>
-        <source srcset="/fruits/assets/pink-tablet@1x-a723cc47.webp 1x, /fruits/assets/pink-tablet@2x-e41c0c12.webp 2x" media="(min-width:1248px)">
-        <source srcset="/fruits/assets/pink-tablet@1x-a723cc47.webp 1x, /fruits/assets/pink-tablet@2x-e41c0c12.webp 2x" media="(min-width:736px)">
-        <source srcset="/fruits/assets/pink-mobile@1x-ee31b64b.webp 1x, /fruits/assets/pink-mobile@2x-f57c286c.webp 2x" media="(max-width:735px)">
-        <img src="" alt="" class="footer__picture">
-      </picture>
+          <source
+            srcset="/fruits/assets/pink-tablet@1x-a723cc47.webp 1x, /fruits/assets/pink-tablet@2x-e41c0c12.webp 2x"
+            media="(min-width:1248px)"
+          />
+          <source
+            srcset="/fruits/assets/pink-tablet@1x-a723cc47.webp 1x, /fruits/assets/pink-tablet@2x-e41c0c12.webp 2x"
+            media="(min-width:736px)"
+          />
+          <source
+            srcset="/fruits/assets/pink-mobile@1x-ee31b64b.webp 1x, /fruits/assets/pink-mobile@2x-f57c286c.webp 2x"
+            media="(max-width:735px)"
+          />
+          <img
+            src="/fruits/assets/pink-tablet@1x-a723cc47.webp"
+            alt=""
+            class="footer__picture"
+          />
+        </picture>
         <a href="./header.html" class="footer__links">
           <svg class="footer__icon">
             <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-vector"></use>
@@ -573,8 +583,8 @@
           fresh harvest box
         </a>
       </div>
-    
-<ul class="footer__list">
+
+      <ul class="footer__list">
         <li class="footer__item">
           <a href="" class="footer__sec">How It Works</a>
         </li>
@@ -585,8 +595,7 @@
           <a href="" class="footer__sec">Contacts</a>
         </li>
       </ul>
-</div>
-
+    </div>
 
     <div class="footer__wrapper">
       <ul class="footer__items">
