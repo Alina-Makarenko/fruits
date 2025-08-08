@@ -14,13 +14,23 @@
   height: 100%;
 width: 100%;
  background: rgba(0, 0, 0, 0.5);
+
+ &__btn{
+    position: relative; 
+top: -60px;
+right: -850px;
+}
+
     &__item{
-width: 273px;
-height: 356px;
+// width: 273px;
+// height: 356px;
+width: 257px;
+height: 308px;
 flex-shrink: 0;
 border-radius: 20px;
 margin-right: 20px;
-
+margin-left: auto;
+margin-right: auto;
     }
     &__item:nth-child(1){
  background-color:$strawberry;
@@ -58,20 +68,24 @@ letter-spacing: -0.28px
     }
  &__img{
  
-height: 250px;
+height: 200px;
     display: block;
  }
 &__box{
     opacity: 1;
   width: 891px;
-height: 811px;
+height: 911px;
 border-radius: 4px;
 background: #FFF;
+position:absolute;
+top: 60px;
+left: 320px;
 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 transition-property:transform;
 transition-duration: 1500ms;
 transition-timing-function: ease-in;
 transform: scale(1);
+
 }
  &__labet{
 display: flex;
@@ -88,6 +102,7 @@ position: relative;
 &__button{
     margin-top: 20px;
     display: flex;
+    position: absolute;
 }
 &__form{
 
@@ -114,18 +129,39 @@ border: 1px solid #000;
 opacity: 0.3;
 
 }
-&__coment{
-    width: 360px;
-height: 145px;
-flex-shrink: 0;
-border-radius: 20px;
-border: 1px solid #000;
-padding: 15px 0px 112px 24px;
-opacity: 0.3;
-
+&__div{
+    display: flex;
+}
+&__imeg{
+    margin-left: auto;
+position: relative;
+top: -180px;
+// left: -20px;
+width: 471px;
+height: 458px;
+display: block;
+right:-10px;
 
 }
+&__title{
+    color:$background-color;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
+font-family: "DM Sans";
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 44px; /* 110% */
+letter-spacing: -1.6px;
+text-transform: uppercase;
+margin-top: 40px;
+}
 
+&__btn{
+padding: 7px 7px 7px 7px;
+color:$background-color;
+border: none;
+background-color: transparent;
+}
 }
  .is-hidden {
   pointer-events: none;
