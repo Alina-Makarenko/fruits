@@ -1,6 +1,6 @@
 .hero {
   padding-top: 56px;
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
   @media screen and (min-width: 736px) {
     padding-top: 64px;
     padding-bottom: 137px;
@@ -42,7 +42,7 @@
       width: 800px;
       position: absolute;
       top: 110px;
-      right: 348px;
+      right: 300px;
     }
   }
   &__position {
