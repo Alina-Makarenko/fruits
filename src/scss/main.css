@@ -447,10 +447,6 @@ body {
   }
 }
 
-.order {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
 @media screen and (min-width: 736px) {
   .order {
     padding-top: 137px;
@@ -761,7 +757,6 @@ body {
 }
 
 .fresh {
-  padding-top: 80px;
   padding-bottom: 80px;
   color: rgb(255, 255, 255);
 }
@@ -769,9 +764,7 @@ body {
   color: rgb(255, 255, 255);
   text-align: center;
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: "DM Sans";
   font-size: 32px;
-  font-style: normal;
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -1.28px;
@@ -852,11 +845,9 @@ body {
     border-radius: 100px;
     border: none;
     color: rgb(255, 255, 255);
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 128.571% */
+    line-height: 1.28;
     letter-spacing: -0.56px;
     opacity: 0.5;
     background: rgb(174, 19, 50);
@@ -874,20 +865,10 @@ body {
     background: rgb(164, 203, 102);
     border: rgb(164, 203, 102);
     color: rgb(255, 255, 255);
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 128.571% */
+    line-height: 1.28;
     letter-spacing: -0.56px;
-    color: rgb(255, 255, 255);
-    font-family: "DM Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px; /* 128.571% */
-    letter-spacing: -0.56px;
-    text-transform: capitalize;
   }
 }
 
@@ -916,6 +897,11 @@ body {
 @media screen and (min-width: 736px) {
   .footer__elem {
     margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .footer__elem {
+    margin-bottom: 0px;
   }
 }
 .footer__wrap {
@@ -959,7 +945,16 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 24px;
+}
+@media screen and (min-width: 355px) {
+  .footer__links {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 736px) {
+  .footer__links {
+    margin-bottom: 0px;
+  }
 }
 .footer__list {
   display: flex;
@@ -968,6 +963,11 @@ body {
   justify-content: center;
   gap: 20px;
   margin-bottom: 44px;
+}
+@media screen and (min-width: 736px) {
+  .footer__list {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (min-width: 1248px) {
   .footer__list {
