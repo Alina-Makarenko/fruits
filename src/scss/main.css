@@ -1062,6 +1062,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  padding: 40px;
   background: rgba(0, 0, 0, 0.5);
 }
 .modal__btn {
@@ -1072,9 +1073,7 @@ body {
 .modal__item {
   width: 257px;
   height: 308px;
-  flex-shrink: 0;
   border-radius: 20px;
-  margin-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1094,9 +1093,7 @@ body {
   margin-top: 40px;
   color: rgb(255, 255, 255);
   margin-left: 20px;
-  font-family: "DM Sans";
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: -0.96px;
@@ -1104,31 +1101,28 @@ body {
 .modal__plant {
   color: rgb(255, 255, 255);
   margin-left: 20px;
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.28px;
 }
 .modal__img {
-  height: 200px;
   display: block;
 }
 .modal__box {
   opacity: 1;
   width: 891px;
-  height: 911px;
+  max-height: 100vh;
   border-radius: 4px;
-  background: #FFF;
+  background: rgb(255, 255, 255);
   position: absolute;
-  top: 60px;
-  left: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   transition-property: transform;
   transition-duration: 1500ms;
   transition-timing-function: ease-in;
-  transform: scale(1);
 }
 .modal__labet {
   display: flex;
@@ -1178,14 +1172,11 @@ body {
 .modal__title {
   color: rgb(174, 19, 50);
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: "DM Sans";
   font-size: 40px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 44px; /* 110% */
+  line-height: 1.1;
   letter-spacing: -1.6px;
   text-transform: uppercase;
-  margin-top: 40px;
 }
 .modal__btn {
   padding: 7px 7px 7px 7px;
