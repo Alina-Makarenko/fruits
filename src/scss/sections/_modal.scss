@@ -1,195 +1,177 @@
-// .modal{
-//      position: fixed;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   width: 100%;
-//   background: rgba(0, 0, 0, 0.5);
-// }
-.modal{
-
-    background-color:$text-color ;
-    position: fixed;
-   top: 0;
+.modal {
+  background-color: $text-color;
+  position: fixed;
+  top: 0;
   left: 0;
   height: 100%;
-width: 100%;
-padding: 40px;
- background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
 
- &__btn{
-    position: relative; 
-top: 7px;
-right: -850px;
-}
+  &__btn {
+    position: relative;
+    top: 7px;
+    right: -850px;
+  }
 
-    &__item{
- width: 73px;
-height: 156px;
-width: 257px;
-height: 308px;
-border-radius: 20px;
-margin-left: auto;
-margin-right: auto;
-    }
-    &__item:nth-child(1){
- background-color:$strawberry;
-    }
-     &__item:nth-child(2){
-          background-color: $banana;
-    }
-      &__item:nth-child(3){
-         background-color:$lime;
-    }
+  &__item {
+    width: 73px;
+    height: 156px;
+    width: 257px;
+    height: 308px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__item:nth-child(1) {
+    background-color: $strawberry;
+  }
+  &__item:nth-child(2) {
+    background-color: $banana;
+  }
+  &__item:nth-child(3) {
+    background-color: $lime;
+  }
 
-    &__list{
-        display: flex;
-    }
-    &__text{
-        margin-top: 40px;
-        color:$text-color;
-margin-left: 20px;
+  &__list {
+    display: flex;
+  }
+  &__text {
+    margin-top: 40px;
+    color: $text-color;
+    margin-left: 20px;
 
-font-size: 24px;
+    font-size: 24px;
 
-font-weight: 700;
-line-height: 1.16; 
-letter-spacing: -0.96px;
-    }
-    &__plant{
-          color:$text-color;
-margin-left: 20px;
-font-size: 14px;
-font-weight: 400;
-line-height: 1.28;
-letter-spacing: -0.28px
-    }
- &__img{
- 
- height: 200px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: -0.96px;
+  }
+  &__plant {
+    color: $text-color;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+  }
+  &__img {
+    height: 200px;
     display: block;
- }
-&__box{
-
+  }
+  &__box {
     opacity: 1;
-  width: 891px;
-max-height: 100vh;
-border-radius: 4px;
- background: $text-color;
-
-position:absolute;
-top:50%;
-left: 50%;
-transform: translate(-50%, -50%);
-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-transition-property:transform;
-transition-duration: 1500ms;
-transition-timing-function: ease-in;
- 
-
-}
- &__labet{
-display: flex;
- color:$icon-hover;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height:1.16 ;
-letter-spacing: 0.12px;
-margin-left: 40px;
-position: relative;
-
- }
-&__button{
+    width: 891px;
+    max-height: 100vh;
+    border-radius: 4px;
+    background: $text-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    transition-property: transform;
+    transition-duration: 1500ms;
+    transition-timing-function: ease-in;
+  }
+  &__labet {
+   
+    display: flex;
+    color: $icon-hover;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.12px;
+    margin-left: 40px;
+    position: relative;
+  }
+  &__button {
     margin-top: 20px;
     display: flex;
     position: absolute;
-top:-5px;
-left:27px;
-}
-&__but{
-   position:relative; 
+    top: -5px;
+    left: 27px;
+  }
+  &__but {
+    position: relative;
     display: flex;
-width: 114px;
-height: 48px;
-padding-left: 27px;
+    width: 114px;
+    height: 48px;
+    padding-left: 27px;
+margin-left: 40px;
+    background-color: $lime;
+    border-radius: 100px;
+  }
+  &__button {
+    color: $text-color;
+    background-color: transparent;
+    border: none;
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+  }
 
-background-color: $lime;
-border-radius: 100px;
-}
-&__button{
-
-    color:$text-color;
-background-color: transparent;
-border: none;
-font-family: "DM Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px; /* 128.571% */
-letter-spacing: -0.56px;
-text-transform: capitalize;
-}
-
-
-&__input{
+  &__input {
     // border: none;
     // background-color:$text-color;
-      width: 448px;
-height: 40px;
-flex-shrink: 0;
-border-radius: 50px;
-border: 1px solid rgba(0, 0, 0, 0.2);
-display: block;
-margin-top: 14px;
-margin-bottom: 14px;
+    width: 448px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 14px;
 
-padding-left:24px;
-width: 360px;
-height: 48px;
-flex-shrink: 0;
-border-radius: 100px;
-border: 1px solid #000;
-opacity: 0.3;
-
-}
-&__div{
+    padding-left: 24px;
+    width: 360px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid #000;
+    opacity: 0.3;
+  }
+  &__div {
     display: flex;
-}
-&__imeg{
+  }
+  &__imeg {
     margin-left: auto;
-position: relative;
-top: -180px;
-// left: -20px;
-width: 471px;
-height: 458px;
-display: block;
-right:-10px;
+    position: relative;
+    top: -180px;
+    // left: -20px;
+    width: 471px;
+    height: 458px;
+    display: block;
+    right: -10px;
+  }
+  &__title {
+    color: $background-color;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 7px;
+    right: -850px;
+    font-size: 40px;
+    top: -5px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+  }
 
+  &__btn {
+    padding: 7px 7px 7px 7px;
+    color: $background-color;
+    border: none;
+    background-color: transparent;
+  }
 }
-&__title{
-    color:$background-color;
-    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
- position: relative; 
-top: 7px;
-right: -850px;
-font-size: 40px;
-top:-5px;
-font-weight: 500;
-line-height: 1.1;
-letter-spacing: -1.6px;
-text-transform: uppercase;
-
-}
-
-&__btn{
-padding: 7px 7px 7px 7px;
-color:$background-color;
-border: none;
-background-color: transparent;
-}
-}
- .is-hidden {
+.is-hidden {
   pointer-events: none;
   opacity: 0;
 }
