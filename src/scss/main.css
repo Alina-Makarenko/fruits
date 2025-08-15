@@ -599,7 +599,7 @@ body {
   }
 }
 .organio__subject {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: "DM Sans";
@@ -612,7 +612,7 @@ body {
   margin-top: 14px;
 }
 .organio__lead {
-  color: #fff;
+  color: rgb(255, 255, 255);
   margin-bottom: 44px;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
@@ -622,6 +622,20 @@ body {
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.56px;
+  width: 334px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 14px;
+}
+@media screen and (min-width: 736px) {
+  .organio__lead {
+    width: 547px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .organio__lead {
+    width: 547px;
+  }
 }
 .organio__item {
   flex-basis: 100%;
@@ -652,7 +666,7 @@ body {
   background-color: rgb(248, 118, 107);
 }
 .organio__text {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-family: "DM Sans";
   font-size: 24px;
   font-style: normal;
@@ -713,7 +727,7 @@ body {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 200px;
-  background: #fff;
+  background: rgb(255, 255, 255);
 }
 .organio__uah {
   color: #ae1332;
@@ -721,7 +735,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.3; /* 133.333% */
+  line-height: 1.3;
   letter-spacing: -0.72px;
   background-color: transparent;
   border: none;
@@ -745,17 +759,18 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.28; /* 128.571% */
+  line-height: 1.28;
   letter-spacing: -0.56px;
   text-transform: uppercase;
   border: none;
   position: absolute;
   top: 35px;
+  left: 7px;
   transform: rotate(-0.07turn);
 }
 .organio__svg {
-  width: 14px;
-  height: 14px;
+  width: 9px;
+  height: 9px;
   fill: rgb(255, 255, 255);
 }
 
@@ -840,9 +855,7 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.56px;
@@ -1151,6 +1164,7 @@ body {
   width: 114px;
   height: 48px;
   padding-left: 27px;
+  margin-left: 40px;
   background-color: rgb(191, 214, 99);
   border-radius: 100px;
 }
@@ -1305,11 +1319,9 @@ body {
 .element__title {
   color: rgb(255, 255, 255);
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: "DM Sans";
   font-size: 40px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 44px; /* 110% */
+  line-height: 1.1;
   letter-spacing: -1.6px;
   text-transform: uppercase;
   justify-content: center;
@@ -1320,11 +1332,9 @@ body {
   width: 391px;
   text-align: center;
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 1.28;
   letter-spacing: -0.56px;
   margin-right: auto;
   margin-left: auto;
