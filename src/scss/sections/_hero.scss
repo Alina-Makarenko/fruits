@@ -1,6 +1,5 @@
 .hero {
   padding-top: 56px;
-  // padding-bottom: 80px;
   @media screen and (min-width: 736px) {
     padding-top: 64px;
     padding-bottom: 137px;
@@ -57,7 +56,7 @@
     }
     @media screen and (min-width: 1248px) {
       top: -350px;
-      left:   890px;
+      left: 890px;
     }
   }
   &__positions {
@@ -65,7 +64,7 @@
     z-index: 1;
     transform: rotate(-5deg);
     bottom: 23px;
-      right: 130px;
+    right: 130px;
     // @media screen and (min-width: 355px) {
     //   bottom: 23px;
     //   right: 130px;
@@ -75,8 +74,8 @@
       right: 265px;
     }
     @media screen and (min-width: 1248px) {
-     bottom: 180px;
-     right: -55px;
+      bottom: 180px;
+      right: -55px;
     }
   }
   &__picture {
@@ -91,15 +90,13 @@
       width: 702px;
       height: 1053px;
       flex-shrink: 0;
-
     }
-         @media screen and (min-width: 1248px){
-    width: 502px;
-height: 853px;
-position: relative;
-top: 100px;
-
-  }
+    @media screen and (min-width: 1248px) {
+      width: 502px;
+      height: 853px;
+      position: relative;
+      top: 100px;
+    }
   }
   &__button {
     background: $text-color;
@@ -129,12 +126,10 @@ top: 100px;
       flex-shrink: 0;
       top: -68px;
     }
-     @media screen and (min-width: 1248px){
-    top: 520px;
-    right: 300px;
-
-  }
-  
+    @media screen and (min-width: 1248px) {
+      top: 520px;
+      right: 300px;
+    }
   }
   &__text {
     color: $text-color;
@@ -208,22 +203,22 @@ top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-     @media screen and (min-width: 1248px){
-    position: absolute;
-    top: 400px;
-    left: 150px;
-  }
+    @media screen and (min-width: 1248px) {
+      position: absolute;
+      top: 400px;
+      left: 150px;
+    }
   }
 
   &__wrappers {
     display: flex;
     flex-direction: column;
     align-items: center;
-     @media screen and (min-width: 1248px){
-    position: absolute;
-    top: 400px;
-    right: 150px;
-  }
+    @media screen and (min-width: 1248px) {
+      position: absolute;
+      top: 400px;
+      right: 150px;
+    }
   }
   &__list {
     display: flex;
@@ -265,7 +260,6 @@ top: 100px;
     @media screen and (min-width: 736px) {
       display: flex;
       flex-direction: row;
-     
     }
   }
 
@@ -273,4 +267,3 @@ top: 100px;
   //   justify-content: space-around;
   // }
 }
-

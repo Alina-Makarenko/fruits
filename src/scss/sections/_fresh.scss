@@ -4,16 +4,16 @@
   // background-color: $background-color;
   color: $text-color;
 
-  @media screen and (min-width: 736px){
+  @media screen and (min-width: 736px) {
     padding-bottom: 144px;
     padding-top: 234px;
   }
-  @media screen and (min-width: 1248px){
+  @media screen and (min-width: 1248px) {
     padding-bottom: 150px;
-   padding-top: 240px;
+    padding-top: 240px;
   }
 
-  &__box{
+  &__box {
     position: relative;
   }
   &__title {
@@ -27,8 +27,8 @@
     letter-spacing: -1.28px;
     text-transform: uppercase;
     position: absolute;
-top: -48px;
-right: 5px;
+    top: -48px;
+    right: 5px;
 
     @media screen and (min-width: 736px) {
       font-size: 54px;
@@ -36,14 +36,14 @@ right: 5px;
       letter-spacing: -2.16px;
 
       top: -80px;
-left: 30px;
+      left: 30px;
     }
     @media screen and (min-width: 1248px) {
       font-size: 64px;
       line-height: 64px;
       letter-spacing: -2.56px;
 
-          top: -90px;
+      top: -90px;
     }
   }
 
@@ -84,9 +84,9 @@ left: 30px;
 
       text-align: center;
       text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-      font-family: 'DM Sans';
+     
       font-size: 14px;
-      font-style: normal;
+     
       font-weight: 400;
       line-height: 18px;
       letter-spacing: -0.56px;
