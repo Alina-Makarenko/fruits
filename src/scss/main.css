@@ -1081,14 +1081,14 @@ body {
 }
 .modal__box {
   opacity: 1;
-  height: 911px;
-  max-height: 100vh;
+  height: 871px;
+  width: 891px;
   border-radius: 4px;
   background: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.6);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   transition-property: transform;
   transition-duration: 1500ms;
@@ -1173,6 +1173,18 @@ body {
   border: 1px solid #000;
   opacity: 0.3;
 }
+.modal__comments {
+  background-repeat: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding-left: 24px;
+  width: 360px;
+  height: 145px;
+  border: 1px solid #000;
+  opacity: 0.3;
+}
 .modal__button {
   margin-top: 20px;
   color: rgb(255, 255, 255);
@@ -1182,7 +1194,7 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 1.28; /* 128.571% */
   letter-spacing: -0.56px;
   text-transform: capitalize;
   background-color: rgb(191, 214, 99);
