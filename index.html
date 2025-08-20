@@ -16,7 +16,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script type="module" crossorigin src="/fruits/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fruits/assets/index-64d9c783.css">
+    <link rel="stylesheet" href="/fruits/assets/index-c5360b33.css">
   </head>
   <body>
     <header class="header">
@@ -77,7 +77,12 @@
   </div>
 </div>
 
-    <section class="hero" id="hero" >
+    <section class="hero" id="hero"  data-aos="fade-down"
+     data-aos-offset="500"
+     data-aos-delay="500"
+     data-aos-once="true"
+     data-aos-easing="ease-in-sine"
+     >
   <div class="container">
     <h2 class="hero__title">
       fresh harvest box<br />
@@ -231,19 +236,32 @@
   </div>
 </section>
 
-    <section class="order" id="order">
+    <section class="order" id="order" >
   <div class="container">
-    <h1 class="order__title">
+    <h1 class="order__title"  data-aos="fade-down"
+         data-aos-offset="100"
+     data-aos-delay="100"
+     data-aos-once="true"
+     data-aos-easing="ease-in-sine">
       To order your fruit basket, simply follow these easy steps
     </h1>
-    <p class="order__text">
+    <p class="order__text"  data-aos="fade-down"
+         data-aos-offset="100"
+     data-aos-delay="100"
+     data-aos-once="true"
+     data-aos-easing="ease-in-sine"
+    >
       Our baskets are assembled with care and delivered straight to your
       doorstep, so you can enjoy the taste of fresh fruit without ever leaving
       your home. Whether you're looking for a healthy snack or a thoughtful
       gift, our fruit baskets are the perfect choice.
     </p>
 
-    <ul class="order__list">
+    <ul class="order__list"  data-aos="fade-right"
+    data-aos-offset="100"
+     data-aos-delay="100"
+     data-aos-once="true"
+     data-aos-easing="ease-in-sine">
       <li class="order__item">
         <button class="order__button">First Step</button>
         <p class="order__desc">
@@ -271,7 +289,12 @@
         src="/fruits/assets/berries-desktop-006a9a6e.webp"
         class="order__picture"
         loading="lazy"
-        alt="Fruit Basket"  />
+        alt="Fruit Basket"
+        data-aos="fade-up" 
+        data-aos-offset="100"
+     data-aos-delay="100"
+     data-aos-once="true"
+     data-aos-easing="ease-in-sine" />
     </picture>
   </div>
 </section>
@@ -531,45 +554,79 @@
 </section>
 
     <section class="fresh" id="fresh">
-    <div class="container fresh__box">
-            <h1 class="fresh__title">FRESH HARVEST BOX HAS<br>GOT YOU COVERED</h1>
+  <div class="container fresh__box">
+    <h1
+      class="fresh__title"
+      data-aos="fade-down"
+      data-aos-offset="100"
+      data-aos-delay="100"
+      data-aos-once="true"
+      data-aos-easing="ease-in-sine"
+    >
+      FRESH HARVEST BOX HAS<br />GOT YOU COVERED
+    </h1>
 
-            <ul class="fresh__images">
-            <li class="fresh__melon">
-                <picture class="fresh__picture">
-                    <source srcset="/fruits/assets/melon-desktop@1x-0bca1c6e.webp 1x, /fruits/assets/melon-desktop@2x-1b3da2c4.webp 2x"
-                        media="(min-width:1248px)">
-                    <source srcset="/fruits/assets/melon-tablet@1x-2786e7a9.webp 1x, /fruits/assets/melon-tablet@2x-f9be18a5.webp 2x"
-                        media="(min-width:736px)">
-                    <source srcset="/fruits/assets/melon-mobile@1x-3b0f4ec8.webp 1x, /fruits/assets/melon-mobile@2x-c04e831f.webp 2x"
-                        media="(min-width:355px)">
-                    <img src="/fruits/assets/melon-desktop@1x-0bca1c6e.webp" class="fresh__image" alt="melon" loading="lazy">
-                </picture>
-            </li>
-            <li class="fresh__blueberries">
-                <picture>
-                    <source
-                        srcset="/fruits/assets/blueberry-desktop@1x-582ef66b.webp 1x, /fruits/assets/blueberry-desktop@2x-a2c1bf46.webp 2x"
-                        media="(min-width:1248px)">
-                    <source srcset="/fruits/assets/blueberry-tablet@1x-d291f93c.webp 1x, /fruits/assets/blueberry-tablet@2x-0d4be548.webp 2x"
-                        media="(min-width:736px)">
-                    <img src="/fruits/assets/blueberry-desktop@1x-582ef66b.webp" class="fresh__image " alt="melon" loading="lazy">
-                </picture>
-            </li>
-            </ul>
+    <ul class="fresh__images">
+      <li class="fresh__melon">
+        <picture class="fresh__picture">
+          <source
+            srcset="/fruits/assets/melon-desktop@1x-0bca1c6e.webp 1x, /fruits/assets/melon-desktop@2x-1b3da2c4.webp 2x"
+            media="(min-width:1248px)"
+          />
+          <source
+            srcset="/fruits/assets/melon-tablet@1x-2786e7a9.webp 1x, /fruits/assets/melon-tablet@2x-f9be18a5.webp 2x"
+            media="(min-width:736px)"
+          />
+          <source
+            srcset="/fruits/assets/melon-mobile@1x-3b0f4ec8.webp 1x, /fruits/assets/melon-mobile@2x-c04e831f.webp 2x"
+            media="(min-width:355px)"
+          />
+          <img
+            src="/fruits/assets/melon-desktop@1x-0bca1c6e.webp"
+            class="fresh__image"
+            alt="melon"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="fresh__blueberries">
+        <picture>
+          <source
+            srcset="/fruits/assets/blueberry-desktop@1x-582ef66b.webp 1x, /fruits/assets/blueberry-desktop@2x-a2c1bf46.webp 2x"
+            media="(min-width:1248px)"
+          />
+          <source
+            srcset="/fruits/assets/blueberry-tablet@1x-d291f93c.webp 1x, /fruits/assets/blueberry-tablet@2x-0d4be548.webp 2x"
+            media="(min-width:736px)"
+          />
+          <img
+            src="/fruits/assets/blueberry-desktop@1x-582ef66b.webp"
+            class="fresh__image"
+            alt="melon"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
 
-            <div class="fresh__specification">
-            <p class="fresh__description">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for<br>anyone looking to eat
-                healthier or support local farmers. Order your box today and start<br>enjoying the best that nature has to
-                offer!</p>
-        
-            <form action="" class="fresh__form">
-            <input type="email" placeholder="Enter email..." class="fresh__input" >
-            <button class="fresh__button" type="button" data-element-open>Send</button>
-            </form>
-</div>
-    </div>   
+    <div class="fresh__specification">
+      <p class="fresh__description">
+        Our boxes are packed with delicious, nutritious fruits and vegetables,
+        perfect for<br />anyone looking to eat healthier or support local
+        farmers. Order your box today and start<br />enjoying the best that
+        nature has to offer!
+      </p>
+
+      <form action="" class="fresh__form">
+        <input type="email" placeholder="Enter email..." class="fresh__input" />
+        <button class="fresh__button" type="button" data-element-open>
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
 </section>
+
     <footer class="footer">
   <div class="container">
     <div class="footer__wrap">
@@ -810,6 +867,7 @@
    
     
      
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
