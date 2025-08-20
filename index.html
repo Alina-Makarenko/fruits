@@ -9,9 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script type="module" crossorigin src="/fruits/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fruits/assets/index-d059543a.css">
+    <link rel="stylesheet" href="/fruits/assets/index-f99db2bc.css">
   </head>
   <body>
     <header class="header">
@@ -31,7 +36,7 @@
 
       <div class="header__logo">
         <svg class="header__icon">
-          <use href="../img/symbol-defs.svg#icon-vector"></use>
+          <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-vector"></use>
         </svg>
         <a href="#" class="header__description"
           >FRESH HARVEST BOX</a
@@ -40,18 +45,18 @@
 
       <a href="#" class="header__baskets">
         <svg class="header__basket">
-          <use href="../img/symbol-defs.svg#icon-basket"></use>
+          <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-basket"></use>
         </svg>
       </a>
 
       <button class="header__btn" type="button" data-menu-open>
         <svg class="header__burger">
-          <use href="../img/symbol-defs.svg#icon-burger"></use>
+          <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-burger"></use>
         </svg>
       </button>
       <button type="button" class="menu__close" data-menu-close>
         <svg class="menu__cross">
-          <use href="../img/symbol-defs.svg#icon-arrow"></use>
+          <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-arrow"></use>
         </svg>
       </button>
     </nav>
@@ -67,12 +72,12 @@
     </ul>
 
     <svg class="menu__basket">
-      <use href="../img/symbol-defs.svg#icon-basket"></use>
+      <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-basket"></use>
     </svg>
   </div>
 </div>
 
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" >
   <div class="container">
     <h2 class="hero__title">
       fresh harvest box<br />
@@ -138,7 +143,7 @@
         loading="lazy"
       />
     </picture>
-    <button type="button" class="hero__button" id="qwert">
+    <button type="button" class="hero__button animate__animated animate__heartBeat" id="qwert">
       shop <br />
       now
     </button>
@@ -778,7 +783,7 @@
   </div>
 </div>
 
-    
+    ENOENT: no such file or directory, open '/home/runner/work/fruits/fruits/src/partials/menu.html'
     <div class="element is-hidden" data-element>
     <div class="element__box">
     <button class="element__btn" type="button" data-element-close>X</button>
@@ -805,6 +810,8 @@
    
     
      
- 
+<script>
+  AOS.init();
+</script>
   </body>
 </html>
