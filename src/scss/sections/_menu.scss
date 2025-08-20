@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  
+
   top: 0;
   left: 0;
   width: 100%;
@@ -8,13 +8,12 @@
   opacity: 1;
   z-index: 6;
   background-color: $background-color;
-  
+
   //  display: flex;
   //   align-items: center;
   // justify-content: center;
- 
 
-  &__close{
+  &__close {
     // position: relative;
     // top: 100px;
     z-index: 10;
@@ -27,10 +26,10 @@
     height: 24px;
     fill: $background-color;
   }
-  &__box{
+  &__box {
     display: flex;
     flex-direction: column;
-  align-items: center;
+    align-items: center;
   }
   &__burger {
     width: 20px;
@@ -52,7 +51,7 @@
     line-height: 1.28;
     letter-spacing: -0.56px;
   }
-  
+
   &__basket {
     fill: $text-color;
     width: 24px;

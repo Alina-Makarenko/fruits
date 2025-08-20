@@ -1,16 +1,14 @@
 .header {
   background-color: $text-color;
-display: flex;
-position: fixed;
-width: 100%;
-top: 0;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
 
-
-z-index: 7;
+  z-index: 7;
   @media screen and (min-width: 736px) {
     padding-top: 16px;
     padding-bottom: 16px;
-    
   }
 
   &__nav {
@@ -75,7 +73,7 @@ z-index: 7;
       display: flex;
     }
   }
-  &__btn{
+  &__btn {
     display: block;
     border: none;
     background-color: transparent;
@@ -89,6 +87,4 @@ z-index: 7;
     height: 24px;
     fill: $background-color;
   }
-
-
 }

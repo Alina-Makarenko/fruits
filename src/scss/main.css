@@ -782,7 +782,7 @@ body {
 .fresh__title {
   color: rgb(255, 255, 255);
   text-align: center;
-  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgb(0, 0, 0);
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
@@ -839,10 +839,8 @@ body {
     display: flex;
     color: rgb(255, 255, 255);
     text-align: center;
-    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-    font-family: "DM Sans";
+    text-shadow: 0 4px 70px rgb(0, 0, 0);
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.56px;
@@ -1305,11 +1303,9 @@ body {
 .element__title {
   color: rgb(255, 255, 255);
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: "DM Sans";
   font-size: 40px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 44px; /* 110% */
+  line-height: 1.1;
   letter-spacing: -1.6px;
   text-transform: uppercase;
   justify-content: center;
@@ -1320,11 +1316,9 @@ body {
   width: 391px;
   text-align: center;
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: "DM Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 1.28;
   letter-spacing: -0.56px;
   margin-right: auto;
   margin-left: auto;
