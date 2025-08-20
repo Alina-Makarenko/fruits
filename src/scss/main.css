@@ -168,6 +168,7 @@ body {
 @media screen and (min-width: 1248px) {
   .hero {
     padding-bottom: 150px;
+    padding-top: 150px;
   }
 }
 .hero > .container {
@@ -854,11 +855,7 @@ body {
     display: flex;
     color: rgb(255, 255, 255);
     text-align: center;
-
     text-shadow: 0 4px 70px rgb(0, 0, 0);
-
-    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
