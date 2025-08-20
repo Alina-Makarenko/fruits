@@ -1081,7 +1081,7 @@ body {
 }
 .modal__box {
   opacity: 1;
-  height: 871px;
+  height: 900px;
   width: 891px;
   border-radius: 4px;
   background: rgb(255, 255, 255);
@@ -1174,11 +1174,11 @@ body {
   opacity: 0.3;
 }
 .modal__comments {
-  background-repeat: 50px;
+  border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: block;
   margin-top: 14px;
-  margin-bottom: 14px;
+  margin-bottom: -5px;
   padding-left: 24px;
   width: 360px;
   height: 145px;
@@ -1186,6 +1186,7 @@ body {
   opacity: 0.3;
 }
 .modal__button {
+  padding: 15px 35px 15px 35px;
   margin-top: 20px;
   color: rgb(255, 255, 255);
   background-color: transparent;
