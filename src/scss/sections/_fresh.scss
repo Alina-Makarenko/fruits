@@ -1,7 +1,6 @@
 .fresh {
   padding-bottom: 80px;
   padding-top: 130px;
-  // background-color: $background-color;
   color: $text-color;
 
   @media screen and (min-width: 736px) {
@@ -19,8 +18,7 @@
   &__title {
     color: $text-color;
     text-align: center;
-    // width: 345px;
-    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px $title-color;
     font-size: 32px;
     font-weight: 500;
     line-height: 32px;
@@ -42,13 +40,9 @@
       font-size: 64px;
       line-height: 64px;
       letter-spacing: -2.56px;
-
       top: -90px;
     }
   }
-
-  //=========================================
-
   &__images {
     list-style: none;
     display: inline-flex;
@@ -66,16 +60,11 @@
       display: flex;
     }
   }
-
-  //=========================================
-
   &__specification {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  //====
   &__description {
     display: none;
     @media screen and (min-width: 736px) {
@@ -83,10 +72,8 @@
       color: $text-color;
 
       text-align: center;
-      text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-     
+      text-shadow: 0 4px 70px $title-color;
       font-size: 14px;
-     
       font-weight: 400;
       line-height: 18px;
       letter-spacing: -0.56px;
@@ -94,8 +81,6 @@
       margin-bottom: 80px;
     }
   }
-
-  //================
   &__form {
     display: none;
     @media screen and (min-width: 736px) {
@@ -117,7 +102,6 @@
       font-weight: 400;
       line-height: 1.28;
       letter-spacing: -0.56px;
-      //   opacity: 0.3
       opacity: 0.5;
       background: $background-color;
     }
@@ -133,7 +117,6 @@
       border-radius: 100px;
       background: $wrap-color;
       border: $wrap-color;
-      //текст
       color: $text-color;
       font-size: 14px;
       font-weight: 400;
