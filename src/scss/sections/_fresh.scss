@@ -27,12 +27,10 @@
     position: absolute;
     top: -48px;
     right: 5px;
-
     @media screen and (min-width: 736px) {
       font-size: 54px;
       line-height: 54px;
       letter-spacing: -2.16px;
-
       top: -80px;
       left: 30px;
     }
@@ -70,7 +68,6 @@
     @media screen and (min-width: 736px) {
       display: flex;
       color: $text-color;
-
       text-align: center;
       text-shadow: 0 4px 70px $title-color;
       font-size: 14px;
