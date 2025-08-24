@@ -26,10 +26,8 @@
     letter-spacing: -1.12px;
     text-transform: uppercase;
     width: 335px;
-
     margin-left: auto;
     margin-right: auto;
-
     margin-bottom: 14px;
     @media screen and (min-width: 736px) {
       font-size: 40px;
@@ -47,7 +45,6 @@
     line-height: 1.28;
     letter-spacing: -0.56px;
     width: 335px;
-
     margin-left: auto;
     margin-right: auto;
     @media screen and (min-width: 736px) {
@@ -67,8 +64,6 @@
   &__item {
     border-radius: 20px;
     background: $text-color;
-    width: 335px;
-    height: 112px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,16 +74,10 @@
     &:nth-child(3) .order__button {
       background: $button-color;
     }
-    @media screen and (min-width: 736px) {
-      width: 389px;
-      height: 128px;
-    }
   }
   &__button {
     display: flex;
     padding: 15px 42px;
-    width: 136px;
-    height: 48px;
     justify-content: center;
     align-items: center;
     gap: 10px;

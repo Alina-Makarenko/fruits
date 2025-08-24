@@ -4,8 +4,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-
+  background: $elem-color;
+  
   &__box {
     background-color: $modal-color;
     width: 600px;
@@ -25,11 +25,8 @@
   }
   &__title {
     color: $text-color;
-
-    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-
+    text-shadow: 0 4px 70px $element-color;
     font-size: 40px;
-  
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -1.6px;
@@ -41,10 +38,8 @@
     color: $text-color;
     width: 391px;
     text-align: center;
-    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
-    
+    text-shadow: 0 4px 70px $element-color;
     font-size: 14px;
-    
     font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.56px;
