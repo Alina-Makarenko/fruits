@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/fruits/assets/strawberry-desktop@1x-ca9835c3.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Harvest Box</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+    <script type="module" crossorigin src="/fruits/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/fruits/assets/index-76320cfa.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#order" class="header__link">How It Works</a>
+        </li>
+        <li class="header__item">
+          <a href="#organio" class="header__link">Fruits</a>
+        </li>
+        <li class="header__item">
+          <a href="#fresh" class="header__link">Contacts</a>
+        </li>
+      </ul>
+
+      <div class="header__logo">
+        <svg class="header__icon">
+          <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-vector"></use>
+        </svg>
+        <a href="#" class="header__description">FRESH HARVEST BOX</a>
+      </div>
+
+      <a href="#" class="header__baskets">
+        <svg class="header__basket">
+          <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-basket"></use>
+        </svg>
+      </a>
+
+      <button class="header__btn" type="button" data-menu-open>
+        <svg class="header__burger">
+          <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="menu__close" data-menu-close>
+        <svg class="menu__cross">
+          <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="menu is-hidden" data-menu>
+  <div class="menu__box">
+    <ul class="menu__list">
+      <li class="menu__item">How It Works</li>
+      <li class="menu__item">Fruits</li>
+      <li class="menu__item">Contacts</li>
+    </ul>
+
+    <svg class="menu__basket">
+      <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-basket"></use>
+    </svg>
+  </div>
+</div>
+
+    <section
+  class="hero"
+  id="hero"
+  data-aos="fade-down"
+  data-aos-offset="500"
+  data-aos-delay="500"
+  data-aos-once="true"
+  data-aos-easing="ease-in-sine"
+>
+  <div class="container">
+    <h2 class="hero__title">
+      fresh harvest box<br />
+      is your 0ne-stop place for a delicious fruit basket
+    </h2>
+    <picture>
+      <source
+        srcset="/fruits/assets/strawberry-desktop@1x-ca9835c3.webp 1x, /fruits/assets/strawberry-desktop@2x-2e135738.webp 2x"
+        media="(min-width:1248px)"
+      />
+      <source
+        srcset="/fruits/assets/strawberry-tablet@1x-dca80583.webp 1x, /fruits/assets/strawberry-tablet@2x-274dc9c2.webp 2x"
+        media="(min-width:736px)"
+      />
+      <source
+        srcset="data:image/webp;base64,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 1x, /fruits/assets/strawberry-mobile@2x-e13f4479.webp 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        src="/fruits/assets/strawberry-desktop@1x-ca9835c3.webp"
+        alt=""
+        class="hero__position"
+        loading="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="/fruits/assets/banana-desktop@1x-8c013238.webp 1x, /fruits/assets/banana-desktop@2x-9adf3988.webp 2x"
+        media="(min-width:1248px)"
+      />
+      <source
+        srcset="/fruits/assets/banana-tablet@1x-8a50ee5a.webp 1x, /fruits/assets/banana-tablet@1x-8a50ee5a.webp 2x"
+        media="(min-width:736px)"
+      />
+      <source
+        srcset="data:image/webp;base64,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 1x, /fruits/assets/banana-mobile@2x-c4d64110.webp 2x"
+        media="(max-width:765px)"
+      />
+      <img
+        src="/fruits/assets/banana-desktop@1x-8c013238.webp"
+        alt=""
+        class="hero__positions"
+        loading="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="/fruits/assets/woman-tablet@1x-9fc13ff5.webp 1x, /fruits/assets/woman-tablet@2x-b0f6dad0.webp 2x"
+        media="(min-width:1248px)"
+      />
+      <source
+        srcset="/fruits/assets/woman-tablet@1x-9fc13ff5.webp 1x, /fruits/assets/woman-tablet@2x-b0f6dad0.webp 2x"
+        media="(min-width:736px)"
+      />
+      <source
+        srcset="/fruits/assets/woman-mobile@1x-5f760c65.webp 1x, /fruits/assets/woman-mobile@2x-0adfb511.webp 2x"
+        media="(max-width:765px)"
+      />
+      <img
+        src="/fruits/assets/woman-mobile@1x-5f760c65.webp"
+        alt=""
+        class="hero__picture"
+        loading="lazy"
+      />
+    </picture>
+    <button
+      type="button"
+      class="hero__button animate__animated animate__heartBeat"
+      id="qwert"
+    >
+      shop <br />
+      now
+    </button>
+    <div class="hero__elem">
+      <div class="hero__wrapper">
+        <p class="hero__text">
+          Our expertly curated fruit baskets are made with the freshest, highest
+          quality fruits available. Whether you are looking for a healthy snack
+          or a gift for a loved one, Fresh Harvest Box has got you covered.
+        </p>
+        <div class="hero__box">
+          <h3 class="hero__subtitles">Fruit</h3>
+          <picture>
+            <source
+              srcset="/fruits/assets/watermelon-mobile@1x-facc6300.webp 1x, /fruits/assets/watermelon-mobile@2x-30608ba4.webp 2x"
+              media="(min-width:1248px)"
+            />
+
+            <source
+              srcset="/fruits/assets/watermelon-mobile@1x-facc6300.webp 1x, /fruits/assets/watermelon-mobile@2x-30608ba4.webp 2x"
+              media="(min-width:736px)"
+            />
+            <source
+              srcset="/fruits/assets/watermelon-mobile@1x-facc6300.webp 1x, /fruits/assets/watermelon-mobile@2x-30608ba4.webp 2x"
+              media="(max-width:765px)"
+            />
+            <img
+              src="/fruits/assets/watermelon-mobile@1x-facc6300.webp"
+              alt=""
+              class="hero__picturees"
+              loading="lazy"
+            />
+          </picture>
+          <p class="hero__titles">
+            Refreshing and juicy, watermelon is the perfect summer treat and a
+            great source of hydration
+          </p>
+        </div>
+      </div>
+
+      <div class="hero__wrappers">
+        <div class="hero__box hero__color">
+          <h3 class="hero__subtitles">Fruit</h3>
+          <picture>
+            <source
+              srcset="/fruits/assets/basket-mobile@1x-2f4a75e9.webp 1x, /fruits/assets/basket-mobile@2x-e6b59995.webp 2x"
+              media="(min-width:1248px)"
+            />
+            <source
+              srcset="/fruits/assets/basket-mobile@1x-2f4a75e9.webp 1x, /fruits/assets/basket-mobile@2x-e6b59995.webp 2x"
+              media="(min-width:736px)"
+            />
+            <source
+              srcset="/fruits/assets/basket-mobile@1x-2f4a75e9.webp 1x, /fruits/assets/basket-mobile@2x-e6b59995.webp 2x"
+              media="(max-width:765px)"
+            />
+            <img
+              src="/fruits/assets/basket-mobile@1x-2f4a75e9.webp"
+              alt=""
+              class="hero__pictures"
+              loading="lazy"
+            />
+          </picture>
+          <p class="hero__titles">
+            Sweet and juicy, strawberries are packed with vitamin C and
+            antioxidants, making them a delicious and healthy snack
+          </p>
+        </div>
+        <ul class="hero__list">
+          <li class="hero__item">
+            <button type="button" class="hero__btn">#organic</button>
+          </li>
+          <li class="hero__item">
+            <button type="button" class="hero__btn">#products</button>
+          </li>
+          <li class="hero__item">
+            <button type="button" class="hero__btn">#basket</button>
+          </li>
+          <li class="hero__item">
+            <button type="button" class="hero__btn">#fruits</button>
+          </li>
+        </ul>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="order" id="order">
+  <div class="container">
+    <h1
+      class="order__title"
+      data-aos="fade-down"
+      data-aos-offset="100"
+      data-aos-delay="100"
+      data-aos-once="true"
+      data-aos-easing="ease-in-sine"
+    >
+      To order your fruit basket, simply follow these easy steps
+    </h1>
+    <p
+      class="order__text"
+      data-aos="fade-down"
+      data-aos-offset="100"
+      data-aos-delay="100"
+      data-aos-once="true"
+      data-aos-easing="ease-in-sine"
+    >
+      Our baskets are assembled with care and delivered straight to your
+      doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+      your home. Whether you're looking for a healthy snack or a thoughtful
+      gift, our fruit baskets are the perfect choice.
+    </p>
+
+    <ul
+      class="order__list"
+      data-aos="fade-right"
+      data-aos-offset="100"
+      data-aos-delay="100"
+      data-aos-once="true"
+      data-aos-easing="ease-in-sine"
+    >
+      <li class="order__item">
+        <button class="order__button">First Step</button>
+        <p class="order__desc">
+          Just choose the fruit you want to order by clicking on the checkboxes
+          next to it.
+        </p>
+      </li>
+      <li class="order__item">
+        <button class="order__button">Second Step</button>
+        <p class="order__desc">Click on the basket and fill out the form.</p>
+      </li>
+      <li class="order__item">
+        <button class="order__button">Third Step</button>
+        <p class="order__desc">
+          Sit back and relax! Your fresh fruit basket will be delivered.
+        </p>
+      </li>
+    </ul>
+
+    <picture>
+      <source
+        src="/fruits/assets/berries-desktop-006a9a6e.webp"
+        media="(min-width: 1200px)"
+      />
+      <source
+        src="/fruits/assets/berries-tablet-3186c3b5.webp"
+        media="(min-width: 768px)"
+      />
+      <source
+        src="/fruits/assets/berries-mobile-58414cb3.webp"
+        media="(max-width: 767px)"
+      />
+      <img
+        src="/fruits/assets/berries-desktop-006a9a6e.webp"
+        class="order__picture"
+        loading="lazy"
+        alt="Fruit Basket"
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-delay="100"
+        data-aos-once="true"
+        data-aos-easing="ease-in-sine"
+      />
+    </picture>
+  </div>
+</section>
+
+    <section class="organio" id="organio">
+  <div class="container">
+    <h1
+      class="organio__subject animate__animated animate__bounceInDown animate__repeat-2"
+    >
+      ORGANIC fRUITS
+    </h1>
+    <p
+      class="organio__lead animate__animated animate__flipInX animate__repeat-1"
+    >
+      Our organic fruits are hand-picked from local farms and delivered straight
+      to your doorstep, ensuring that you get the freshest and most nutritious
+      produce possible. We offer a wide selection of organic fruits grown
+      without the use of harmful pesticides or chemicals.
+    </p>
+    <ul class="organio__list">
+      <li class="organio__item" data-aos-easing="ease-in-sine">
+        <h2 class="organio__text">Strawberry</h2>
+        <p class="organio__plant">Plant</p>
+
+        <picture class="organic__picture">
+          <source
+            src="./img/desktop/comp-ostrawberry@1x.webp 1x , ./img/desktop/comp-ostrawberry@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/tab-ostrawberry@1x.webp 1x , ./img/tablet/tab-ostrawberry@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/ostrawberry-mobile@1x.webp 1x , ./img/mobile/ostrawberry-mobile@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-ostrawberry@1x-aad2a47c.webp"
+            class="order__img"
+            width="260"
+            alt=""
+            loading="lazy"
+        /></picture>
+        <div class="organio__btn">
+          <button
+            class="organio__uah"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+            data-aos="fade-right"
+          >
+            100 UAH / kg
+          </button>
+        </div>
+      </li>
+
+      <li class="organio__item">
+        <h2 class="organio__text">Banana</h2>
+        <p class="organio__plant">Plant</p>
+        <picture class="organic__picture">
+          <source
+            src="./img/desktop/comp-obanana@1x.webp 1x , ./img/desktop/comp-obanana@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/tab-obanana@1x.webp 1x , ./img/tablet/tab-obanana@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/obanana-mobile@1x.webp 1x , ./img/mobile/obanana-mobile@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-obanana@1x-06ee01fb.webp"
+            class="order__img"
+            width="260"
+            alt=""
+            loading="lazy"
+        /></picture>
+        <div class="organio__btn">
+          <button
+            class="organio__uah"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+            data-aos="fade-right"
+          >
+            80 UAH / kg
+          </button>
+        </div>
+      </li>
+
+      <li class="organio__item">
+        <h2 class="organio__text">Watermelon</h2>
+        <p class="organio__plant">Plant</p>
+        <picture class="organic__picture">
+          <source
+            src="./img/desktop/comp-watermelon@1x.webp 1x ,./img/desktop/comp-watermelon@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/watermelon-tablet@1x.webp 1x ,./img/tablet/watermelon-tablet@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/watermelon-mobile@1x.webp 1x ,./img/mobile/watermelon-mobile@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-watermelon@1x-fbebb294.webp"
+            class="order__img"
+            width="260"
+            alt=""
+            loading="lazy"
+        /></picture>
+        <div class="organio__btn">
+          <button
+            class="organio__uah"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+          >
+            40 UAH / kg
+          </button>
+        </div>
+      </li>
+
+      <li class="organio__item">
+        <h2 class="organio__text">Lime</h2>
+        <p class="organio__plant">Plant</p>
+        <picture>
+          <source
+            src="./img/desktop/comp-lime@1x.webp 1x , ./img/desktop/comp-lime@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/lime-tablet@1x.webp 1x , ./img/tablet/lime-tablet@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/lime-mobile@1x.webp 1x , ./img/mobile/lime-mobile@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-lime@1x-ad01a19a.webp"
+            class="order__img"
+            width="260"
+            alt=""
+            loading="lazy"
+        /></picture>
+        <div class="organio__btn">
+          <button
+            class="organio__uah"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+            data-aos="fade-right"
+          >
+            60 UAH / kg
+          </button>
+        </div>
+      </li>
+
+      <li class="organio__item">
+        <h2 class="organio__text">Apple</h2>
+        <p class="organio__plant">Plant</p>
+        <picture>
+          <source
+            src="./img/desktop/comp-apple@1x.webp 1x , ./img/desktop/comp-apple@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/apple-tablet@1x.webp 1x , ./img/tablet/apple-tablet@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/apple-mobile@1x.webp 1x , ./img/mobile/apple-mobile@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-apple@1x-1a836a0f.webp"
+            class="order__img"
+            width="260"
+            alt=""
+            loading="lazy"
+        /></picture>
+        <div class="organio__btn">
+          <button
+            class="organio__uah"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+            data-aos="fade-right"
+          >
+            50 UAH / kg
+          </button>
+        </div>
+      </li>
+
+      <li class="organio__item">
+        <h2 class="organio__text">Peach</h2>
+        <p class="organio__plant">Plant</p>
+        <picture>
+          <source
+            src="./img/desktop/comp-nectarine@1x.webp 1x , ./img/desktop/comp-nectarine@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/tab-nectarine@1x.webp 1x , ./img/tablet/tab-nectarine@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/mobile-nectarine@1x.webp 1x , ./img/mobile/mobile-nectarine@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-nectarine@1x-f2ce4d47.webp"
+            class="order__img"
+            width="260"
+            alt=""
+            loading="lazy"
+        /></picture>
+        <div class="organio__btn">
+          <button
+            class="organio__uah"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+            data-aos="fade-right"
+          >
+            80 UAH / kg
+          </button>
+        </div>
+      </li>
+
+      <li class="organio__item">
+        <h2 class="organio__text">Plums</h2>
+        <p class="organio__plant">Plant</p>
+        <picture>
+          <source
+            src="./img/desktop/comp-plum@1x.webp 1x , ./img/desktop/comp-plum@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/plums-tablet@1x.webp 1x , ./img/tablet/plums-tablet@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/plums-mobile@1x.webp 1x , ./img/mobile/plums-mobile@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-plums@1x-47c7a3ea.webp"
+            class="order__img"
+            width="260"
+            alt=""
+            loading="lazy"
+        /></picture>
+        <div class="organio__btn">
+          <button
+            class="organio__uah"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+            data-aos="fade-right"
+          >
+            40 UAH / kg
+          </button>
+        </div>
+      </li>
+
+      <li class="organio__item">
+        <h2 class="organio__text">Orange</h2>
+        <p class="organio__plant">Plant</p>
+        <picture>
+          <source
+            src="./img/desktop/comp-orange@1x.webp 1x , ./img/desktop/comp-orange@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/orange-tablet@1x.webp 1x , ./img/tablet/orange-tablet@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/orange-mobile@1x.webp 1x , ./img/mobile/orange-mobile@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-orange@1x-17716ac7.webp"
+            class="order__img"
+            width="260"
+            alt=""
+            loading="lazy"
+        /></picture>
+        <div class="organio__btn">
+          <button
+            class="organio__uah"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+            data-aos="fade-right"
+          >
+            60 UAH / kg
+          </button>
+        </div>
+      </li>
+
+      <li class="organio__item">
+        <h2 class="organio__text">Kiwi</h2>
+        <p class="organio__plant">Plant</p>
+        <picture>
+          <source
+            srcset="/fruits/assets/comp-kiwi@1x-83a8508f.webp 1x, /fruits/assets/comp-kiwi@2x-7b43cd7b.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            srcset="
+              ./img/tablet/kiwi-tablet@1x.webp 1x,
+              ./img/tablet/kiwi-tablet@2x.webp 2x
+            "
+            media="(min-width: 768px)" />
+          <source
+            srcset="
+              ./img/mobile/kiwi-mobile@1x.webp 1x,
+              ./img/mobile/kiwi-mobile@2x.webp 2x
+            "
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-kiwi@1x-83a8508f.webp"
+            class="order__img"
+            width="260"
+            alt=""
+            loading="lazy"
+        /></picture>
+
+        <div class="organio__btn">
+          <button
+            class="organio__uah"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+            data-aos="fade-right"
+          >
+            90 UAH / kg
+          </button>
+        </div>
+      </li>
+    </ul>
+    <div class="organio__bfon">
+      <button type="button" class="organio__order" data-modal-open>
+        <svg class="organio__svg">
+          <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-arrow"></use>
+        </svg>
+        ORDER
+      </button>
+    </div>
+  </div>
+</section>
+
+    <section class="fresh" id="fresh">
+  <div
+    class="container fresh__box"
+    data-aos="fade-down"
+    data-aos-offset="100"
+    data-aos-delay="100"
+    data-aos-once="true"
+    data-aos-easing="ease-in-sine"
+  >
+    <h1 class="fresh__title">FRESH HARVEST BOX HAS<br />GOT YOU COVERED</h1>
+    <ul class="fresh__images">
+      <li class="fresh__melon">
+        <picture class="fresh__picture">
+          <source
+            srcset="/fruits/assets/melon-desktop@1x-0bca1c6e.webp 1x, /fruits/assets/melon-desktop@2x-1b3da2c4.webp 2x"
+            media="(min-width:1248px)"
+          />
+          <source
+            srcset="/fruits/assets/melon-tablet@1x-2786e7a9.webp 1x, /fruits/assets/melon-tablet@2x-f9be18a5.webp 2x"
+            media="(min-width:736px)"
+          />
+          <source
+            srcset="/fruits/assets/melon-mobile@1x-3b0f4ec8.webp 1x, /fruits/assets/melon-mobile@2x-c04e831f.webp 2x"
+            media="(min-width:355px)"
+          />
+          <img
+            src="/fruits/assets/melon-desktop@1x-0bca1c6e.webp"
+            class="fresh__image"
+            alt="melon"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="fresh__blueberries">
+        <picture>
+          <source
+            srcset="/fruits/assets/blueberry-desktop@1x-582ef66b.webp 1x, /fruits/assets/blueberry-desktop@2x-a2c1bf46.webp 2x"
+            media="(min-width:1248px)"
+          />
+          <source
+            srcset="/fruits/assets/blueberry-tablet@1x-d291f93c.webp 1x, /fruits/assets/blueberry-tablet@2x-0d4be548.webp 2x"
+            media="(min-width:736px)"
+          />
+          <img
+            src="/fruits/assets/blueberry-desktop@1x-582ef66b.webp"
+            class="fresh__image"
+            alt="melon"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
+
+    <div class="fresh__specification">
+      <p class="fresh__description">
+        Our boxes are packed with delicious, nutritious fruits and vegetables,
+        perfect for<br />anyone looking to eat healthier or support local
+        farmers. Order your box today and start<br />enjoying the best that
+        nature has to offer!
+      </p>
+
+      <form action="" class="fresh__form">
+        <input type="email" placeholder="Enter email..." class="fresh__input" />
+        <button class="fresh__button" type="button" data-element-open>
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__elem">
+        <picture>
+          <source
+            srcset="/fruits/assets/pink-tablet@1x-a723cc47.webp 1x, /fruits/assets/pink-tablet@2x-e41c0c12.webp 2x"
+            media="(min-width:1248px)"
+          />
+          <source
+            srcset="/fruits/assets/pink-tablet@1x-a723cc47.webp 1x, /fruits/assets/pink-tablet@2x-e41c0c12.webp 2x"
+            media="(min-width:736px)"
+          />
+          <source
+            srcset="/fruits/assets/pink-mobile@1x-ee31b64b.webp 1x, /fruits/assets/pink-mobile@2x-f57c286c.webp 2x"
+            media="(max-width:735px)"
+          />
+          <img
+            src="/fruits/assets/pink-tablet@1x-a723cc47.webp"
+            alt=""
+            class="footer__picture"
+            loading="lazy"
+          />
+        </picture>
+        <a href="./header.html" class="footer__links">
+          <svg class="footer__icon">
+            <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-vector"></use>
+          </svg>
+          fresh harvest box
+        </a>
+      </div>
+
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#order" class="footer__sec">How It Works</a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__sec">Fruits</a>
+        </li>
+        <li class="footer__item">
+          <a href="#fresh" class="footer__sec">Contacts</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__wrapper">
+      <ul class="footer__items">
+        <li class="footer__element">
+          <a
+            href="https://www.facebook.com/?locale=ru_RU"
+            class="footer__network"
+          >
+            <svg class="footer__icons">
+              <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="footer__element">
+          <a href="https://www.instagram.com/" class="footer__network"
+            ><svg class="footer__icons">
+              <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="footer__element">
+          <a
+            href="https://www.youtube.com/?app=desktop&hl=ru"
+            class="footer__network"
+            ><svg class="footer__icons">
+              <use href="/fruits/assets/symbol-defs-3969fd4a.svg#icon-youtube"></use></svg
+          ></a>
+        </li>
+      </ul>
+      <ul class="footer__contacts">
+        <li class="footer__items">
+          <a href="tel:+380(68)4439426" class="footer__contact"
+            >+380 (68) 443-94-26</a
+          >
+        </li>
+        <li class="footer__items">
+          <a
+            href="https://www.google.com/maps?sca_esv=d4acbba8fa1ce30c&biw=1536&bih=703&output=search&q=1678+S.+Pioneer+Road+Salt+Lake+City+UT+84104&source=lnms&fbs=AIIjpHw-oMPsWpczgEcAXjZj4N6Y10KItsR0lBaHfEfADxpB_jujGPM-IIgq16T9rgKkSqBfS3C0ZPLTn0S41ysi0QihuA1DEcBUAzRGvlGOJcYKdzkbx_UCtaFI65Pz_TNAdnW-LEkb54Sk9z0OXmiVGbSP_SAvxXgOyvncxWGoDH-BbG2AadHkHHidte8xQZ59eJyO7iFt4d2HDjVwNXQSSQoY3ZL-GyqtNoCZwAcqb0CQMkwxIm8XxHeH1wGP4cfhYCTqv_EzeEjAaOBbb1swUS2pqOjBnQ&entry=mc&ved=1t:200715&ictx=111"
+            class="footer__contact"
+            >1678 S. Pioneer Road<br />Salt Lake City <br />
+            UT 84104</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div class="modal is-hidden" data-modal>
+  <div class="modal__box">
+    <h2 class="modal__title">Your Order</h2>
+    <button type="button" class="modal__btn" data-modal-close>X</button>
+    <ul class="modal__list">
+      <li class="modal__item">
+        <h2 class="modal__text">Strawberry Basket</h2>
+        <p class="modal__plant">Plant</p>
+        <picture class="modal__picture">
+          <source
+            srcset="/fruits/assets/comp-strawberryb@1x-ed150306.webp 1x, /fruits/assets/comp-strawberryb@2x-58061d8a.webp 2x"
+            media="(min-width:1248px)"
+          />
+          <source
+            srcset="/fruits/assets/comp-strawberryb@1x-ed150306.webp 1x, /fruits/assets/comp-strawberryb@2x-58061d8a.webp 2x"
+            media="(min-width:736px)"
+          />
+          <source
+            src="./img/mobile/tell-strawberryb@1x.webp 1x , ./img/mobile/tell-strawberryb@2x.webp 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/fruits/assets/comp-strawberryb@1x-ed150306.webp"
+            alt=""
+            class="modal__img"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="modal__item">
+        <h2 class="modal__text">Apple Basket</h2>
+        <p class="modal__plant">Plant</p>
+        <picture class="modal__picture">
+          <source
+            src="./img/desktop/comp-appleb@1x.webp 1x , ./img/desktop/comp-appleb@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/planhet-apple@1x.webp 1x , ./img/tablet/planhet-apple@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/tell-appleb@1x.webp 1x , ./img/mobile/tell-appleb@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-appleb@1x-d1cdedfa.webp"
+            alt=""
+            class="modal__img"
+            loading="lazy"
+        /></picture>
+      </li>
+      <li class="modal__item">
+        <h2 class="modal__text">Fruits Basket</h2>
+        <p class="modal__plant">Plant</p>
+        <picture class="modal__picture">
+          <source
+            src="./img/desktop/comp-fruitsb@1x.webp 1x , ./img/desktop/comp-fruitsb@2x.webp 2x"
+            media="(min-width: 1200px)" />
+          <source
+            src="./img/tablet/planhet-fruitsb@1x.webp 1x , ./img/tablet/planhet-fruitsb@2x.webp 2x"
+            media="(min-width: 768px)" />
+          <source
+            src="./img/mobile/tell-fruitsb@1x.webp 1x , ./img/mobile/tell-fruitsb@2x.webp 2x"
+            media="(max-width: 767px)" />
+          <img
+            src="/fruits/assets/comp-fruitsb@1x-208161c1.webp"
+            alt=""
+            class="modal__img"
+            loading="lazy"
+        /></picture>
+      </li>
+    </ul>
+    <form class="modal__form">
+      <label class="modal__labet" for="user-name"
+        ><input
+          type="text"
+          class="modal__input"
+          id="user-name"
+          required
+          placeholder="Enter full name..." /></label
+      ><label class="modal__labet" for="user-email"
+        ><input
+          class="modal__input"
+          id="user-email"
+          type="email"
+          required
+          placeholder="Enter email..." /></label
+      ><label class="modal__labet"
+        ><input
+          type="text"
+          class="modal__input"
+          required
+          placeholder="Enter card.." /></label
+      ><label class="modal__labet" for="user-comment">
+        <textarea
+          class="modal__comments"
+          placeholder="Enter comments..."
+          id="user-comment"
+        ></textarea>
+      </label>
+    </form>
+    <div class="modal__div">
+      <nav class="modal__but">
+        <button type="submit" class="modal__button">Submit</button>
+      </nav>
+      <picture class="modal__imeg">
+        <source
+          src="./img/desktop/comp-girl@1x.webp 1x , ./img/desktop/comp-girl@2x.webp 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          src="./img/tablet/planhet-girl@1x.webp 1x , ./img/tablet/planhet-girl@2x.webp 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          src="./img/mobile/tell-girl@1x.webp 1x , ./img/mobile/tell-girl@2x.webp 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          src="/fruits/assets/comp-girl@1x-9f4415dc.webp"
+          alt=""
+          class="modal__imeg"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+    <p></p>
+  </div>
+</div>
+
+    ENOENT: no such file or directory, open '/home/runner/work/fruits/fruits/src/partials/menu.html'
+    <div class="element is-hidden" data-element>
+  <div class="element__box">
+    <button class="element__btn" type="button" data-element-close>X</button>
+    <picture class="element__picture">
+      <source
+        src="./img/desktop/comp-raspberry@1x.webp 1x , ./img/desktop/comp-raspberry@2x.webp 2x"
+        media="(min-width: 1200px)" />
+      <source
+        src="./img/tablet/tab-raspberry@1x.webp 1x , ./img/tablet/tab-raspberry@2x.webp 2x"
+        media="(min-width: 768px)" />
+      <source
+        src="./img/mobile/tell-raspberry@1x.webp 1x , ./img/mobile/tell-raspberry@2x.webp 2x"
+        media="(max-width: 767px)" />
+      <img
+        src="/fruits/assets/comp-raspberry@1x-25a179ac.webp"
+        alt=""
+        class="element__img"
+        loading="lazy"
+    /></picture>
+    <h1 class="element__title">THANK YOU</h1>
+    <p class="element__text">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
+</div>
+
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
